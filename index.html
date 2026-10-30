@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A.I.T. Tarlac City: Free Senior High and TESDA courses</title>
+<meta name="description" content="Sample website, online application and quotation prepared for A.I.T. Advanced Institute Technology of Tarlac City, Inc. For proposal purposes only.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#22237A">
+<!-- Facebook link previews need absolute URLs. Before the client's domain is live, set meta.site_url in client.json
+     to the address where this page is hosted, then rebuild. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A.I.T. Tarlac">
+<meta property="og:title" content="A.I.T. Advanced Institute Technology of Tarlac City">
+<meta property="og:description" content="Free Senior High (ABM, GAS, HUMSS, Tech-Voc) and TESDA-registered courses on MacArthur Highway, Tarlac City, since 2006. Apply online or message us.">
+<meta property="og:url" content="https://aittarlac.com/">
+<meta property="og:image" content="https://aittarlac.com/media/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The A.I.T. seal on a navy circuit background with the words Free Senior High and TESDA Courses">
+<link rel="icon" href="media/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="media/facade.webp">
+<style>
+:root{
+  --navy:#0B3A6B; --navy-2:#0F4A86; --navy-3:#072A4F; --on-navy:#FFFFFF; --on-navy-2:#C9DCEF;
+  --white:#FFFFFF; --tint:#EAF5FC; --tint-2:#D9EDF9; --line:#CFE3F2;
+  --sky:#2E9BD6; --link:#1A73A8; --yellow:#FFD54A; --yellow-2:#FFE27F;
+  --leaf:#3E9B3A; --leaf-ink:#1E5A26; --leaf-tint:#E5F3E3;
+  --ink:#0B3A6B; --ink-2:#3D5268; --bad:#B42318; --ok:#1E5A26;
+  --r:16px; --r-lg:24px;
+  --shadow:0 14px 34px -16px rgba(11,58,107,.35);
+  --shadow-sm:0 6px 18px -10px rgba(11,58,107,.35);
+  --head:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --bar:64px; --bbar:0px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 12px)}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-bottom:var(--bbar);overflow-x:hidden}
+@media (min-width:768px){body{font-size:18px}}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--link);text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:800;line-height:1.08;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,6.4vw,46px)}
+h3{font-size:clamp(22px,4.6vw,28px);font-weight:700}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+@media (min-width:768px){.wrap{padding:0 32px}}
+section{position:relative;padding:64px 0}
+@media (min-width:900px){section{padding:88px 0}}
+.lead{color:var(--ink-2);margin-top:12px;max-width:58ch}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.cur{font-family:var(--body);font-weight:700;font-size:.6em;margin-right:.06em;vertical-align:.18em}
+
+/* section marker: the open book from the crest */
+.mark{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--tint);color:var(--sky);margin-bottom:12px}
+.mark svg{width:26px;height:26px}
+.on-navy .mark,.navy .mark{background:rgba(255,255,255,.1);color:var(--yellow)}
+
+/* buttons: 48px minimum */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border:0;border-radius:999px;padding:12px 24px;font-family:var(--body);font-weight:700;font-size:17px;line-height:1.2;text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:active{transform:translateY(1px)}
+.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 8px 20px -8px rgba(0,0,0,.45)}
+.btn-yellow:hover{background:var(--yellow-2)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.85)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-line{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn-line:hover{background:var(--tint)}
+.btn-soft{background:var(--tint);color:var(--navy)}
+.btn-soft:hover{background:var(--tint-2)}
+.btn-sm{min-height:44px;padding:10px 18px;font-size:16px}
+.navy{background:var(--navy);color:var(--on-navy)}
+.navy .lead{color:var(--on-navy-2)}
+.navy a{color:var(--yellow)}
+.tint{background:var(--tint)}
+
+/* reveal on scroll */
+html.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+html.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1;transform:none;transition:none}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition:none !important}
+}
+
+/* ============ INTRO ============ */
+#intro{position:fixed;inset:0;z-index:100;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .6s,visibility .6s;overflow:auto}
+#intro.gone{opacity:0;visibility:hidden}
+#intro .crest{width:112px;height:112px;margin:0 auto;border-radius:50%;background:#fff;padding:6px;box-shadow:0 18px 40px rgba(0,0,0,.35);animation:pop .8s cubic-bezier(.2,.7,.2,1) both}
+#intro .word{font-family:var(--head);font-weight:800;font-size:clamp(36px,9vw,64px);line-height:1;margin-top:22px;animation:up .7s .2s both}
+#intro .sub{font-weight:700;letter-spacing:.24em;font-size:14px;color:var(--yellow);margin-top:8px;animation:up .7s .3s both}
+#intro .greet{font-size:clamp(19px,4.6vw,24px);line-height:1.4;margin-top:28px;animation:up .7s .45s both}
+#intro .inote{font-size:16px;color:var(--on-navy-2);max-width:44ch;margin:14px auto 0;animation:up .7s .55s both}
+#intro .acts{margin-top:26px;animation:up .7s .65s both}
+#intro .skip{position:absolute;top:14px;right:14px;min-height:44px;padding:0 14px;background:none;border:0;color:var(--on-navy-2);text-decoration:underline;text-underline-offset:3px;font-size:16px}
+#intro .confetti{position:absolute;inset:0;pointer-events:none;opacity:.5}
+#intro > div{position:relative}
+@keyframes pop{from{opacity:0;transform:scale(.8) rotate(-8deg)}to{opacity:1;transform:none}}
+@keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* ============ HEADER ============ */
+.strip{background:var(--navy-3);color:#fff;font-size:14px;font-weight:700;text-align:center;padding:7px 16px;line-height:1.35}
+.strip i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--yellow);margin-right:8px;vertical-align:1px}
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);box-shadow:0 1px 0 var(--line),0 8px 24px -18px rgba(11,58,107,.5)}
+.top .wrap{height:var(--bar);display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);min-height:48px}
+.brand img{width:42px;height:42px}
+.brand b{font-family:var(--head);font-weight:800;font-size:21px;line-height:1}
+.brand small{display:block;font-weight:700;font-size:13px;color:var(--ink-2);margin-top:2px}
+.nav{display:none;margin-left:auto;gap:2px}
+.nav a{color:var(--navy);text-decoration:none;font-weight:700;font-size:16px;padding:10px 12px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover,.nav a.now{background:var(--tint)}
+.nav a.prop{background:var(--navy);color:#fff;margin-left:6px}
+.menu-btn{margin-left:auto;min-height:48px;min-width:48px;border:0;border-radius:999px;background:var(--tint);color:var(--navy);font-weight:700;display:inline-flex;align-items:center;gap:8px;padding:0 16px}
+.menu-btn svg{width:22px;height:22px}
+.menu-panel{position:absolute;left:0;right:0;top:100%;background:#fff;box-shadow:0 18px 30px -18px rgba(11,58,107,.5);padding:8px 20px 18px;display:none}
+.menu-panel.open{display:block}
+.menu-panel a{display:flex;align-items:center;min-height:52px;color:var(--navy);text-decoration:none;font-weight:700;font-size:18px;border-bottom:1px solid var(--line)}
+.menu-panel a:last-child{border-bottom:0}
+@media (min-width:1120px){.nav{display:flex}.menu-btn{display:none}.menu-panel{display:none !important}}
+
+/* ============ HERO ============ */
+.hero{background:var(--navy);color:#fff;padding:40px 0 0;overflow:hidden}
+.hero .stars{position:absolute;inset:0;pointer-events:none;opacity:.55}
+.hero-grid{position:relative;display:grid;gap:34px;align-items:center}
+.hero .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border-radius:999px;padding:7px 14px;font-weight:700;font-size:15px;color:#fff}
+.hero .pill svg{width:18px;height:18px;color:var(--yellow)}
+.hero h1{font-size:clamp(38px,10vw,66px);margin-top:16px;max-width:14ch}
+.hero h1 span{color:var(--yellow)}
+.hero-sub{color:var(--on-navy-2);margin-top:16px;max-width:44ch;font-size:18px}
+.hero-acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero-acts .btn{flex:1 1 200px}
+.hero-meta{display:flex;align-items:center;gap:10px;margin-top:20px;color:var(--on-navy-2);font-size:15.5px}
+.hero-meta svg{width:20px;height:20px;color:var(--yellow);flex:none}
+.blob-wrap{position:relative;width:min(100%,520px);margin:0 auto;aspect-ratio:1/1}
+.blob-back{position:absolute;inset:-4% -6% 0 4%;background:var(--sky);border-radius:58% 42% 52% 48% / 46% 54% 46% 54%;opacity:.95}
+.blob-ring{position:absolute;inset:6% 2% -2% -4%;border:3px dashed rgba(255,255,255,.45);border-radius:44% 56% 40% 60% / 56% 44% 56% 44%}
+.blob{position:absolute;inset:4% 4% 6% 2%;border-radius:47% 53% 58% 42% / 52% 46% 54% 48%;overflow:hidden;box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+.blob img{width:100%;height:100%;object-fit:cover}
+.hero-chip{position:absolute;left:-2%;bottom:6%;background:#fff;color:var(--navy);border-radius:18px;padding:10px 14px 10px 10px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow);max-width:250px}
+.hero-chip b{display:block;font-family:var(--head);font-weight:800;font-size:22px;line-height:1}
+.hero-chip span{font-size:14px;line-height:1.3;font-weight:700;color:var(--ink-2)}
+.hero-chip i{width:42px;height:42px;border-radius:12px;background:var(--leaf-tint);display:grid;place-items:center;flex:none;color:var(--leaf)}
+.hero-chip i svg{width:24px;height:24px}
+.doodle{position:absolute;pointer-events:none}
+.doodle.star{right:4%;top:-2%;width:46px;color:var(--yellow)}
+.doodle.pencil{right:-2%;bottom:20%;width:60px;color:#fff;opacity:.9}
+.credit{color:var(--on-navy-2);font-size:14px;text-align:center;margin-top:12px}
+@media (min-width:900px){
+  .hero{padding-top:64px}
+  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px}
+  .hero-acts .btn{flex:0 0 auto}
+}
+.wave{display:block;width:100%;height:56px;margin-top:-1px}
+@media (min-width:900px){.wave{height:90px}}
+
+/* ============ COUNTDOWN ============ */
+.cd-sec{padding:28px 0 8px}
+.cd{background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:24px 20px;display:grid;gap:18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.cd::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:var(--sky);opacity:.35}
+.cd > *{position:relative;z-index:1}
+.cd h2{font-size:clamp(24px,5.4vw,32px)}
+.cd p{color:var(--on-navy-2);margin-top:6px}
+.cd .tag{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--navy);background:var(--yellow);border-radius:999px;padding:3px 12px}
+.cd-boxes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.cd-boxes div{background:rgba(255,255,255,.1);border-radius:14px;padding:10px 4px;text-align:center}
+.cd-boxes b{display:block;font-family:var(--head);font-weight:800;font-size:clamp(28px,7vw,40px);line-height:1;color:var(--yellow)}
+.cd-boxes span{font-size:14px;font-weight:700;color:var(--on-navy-2)}
+@media (min-width:900px){.cd{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;align-items:center;padding:28px 32px;gap:28px}}
+
+/* ============ CARDS AND GRIDS ============ */
+.cards{display:grid;gap:18px;margin-top:30px}
+@media (min-width:640px){.cards.c2,.cards.c4{grid-template-columns:repeat(2,minmax(0,1fr))}.cards.c3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.cards.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.cards.c3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;color:var(--ink);text-decoration:none}
+.card .ph{aspect-ratio:4/3;object-fit:cover;width:100%;background:var(--tint)}
+.card .cb{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:24px}
+.card p{color:var(--ink-2);font-size:16.5px}
+.card .more{margin-top:auto;padding-top:8px;font-weight:700;color:var(--link);text-decoration:underline;text-underline-offset:3px}
+a.card:hover{transform:translateY(-3px)}
+a.card{transition:transform .2s}
+.badge{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;background:var(--leaf-tint);color:var(--leaf-ink);font-weight:700;font-size:14px;border-radius:999px;padding:3px 12px 3px 8px}
+.badge i{width:10px;height:10px;border-radius:50%;background:var(--leaf);display:block}
+.badge.sample{background:var(--tint-2);color:var(--navy)}
+.badge.sample i{background:var(--sky)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}
+.facts div{background:var(--tint);border-radius:var(--r);padding:16px 16px 14px}
+.facts b{display:block;font-family:var(--head);font-weight:800;font-size:clamp(28px,7vw,38px);line-height:1;color:var(--navy)}
+.facts span{font-size:15.5px;color:var(--ink-2);font-weight:700}
+@media (min-width:900px){.facts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* ============ KINDER CHECK ============ */
+.kc{display:grid;gap:28px;margin-top:30px}
+@media (min-width:900px){.kc{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start}}
+.panel{background:#fff;border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow)}
+.fld{margin-bottom:14px}
+.fld > label,.fld > .lab{display:block;font-weight:700;font-size:16px;margin-bottom:6px;color:var(--navy)}
+.fld input,.fld select{width:100%;min-height:50px;padding:10px 14px;border-radius:12px;border:2px solid var(--line);background:#fff;font-size:17px;color:var(--navy)}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(46,155,214,.25)}
+.fld .err{display:none;color:var(--bad);font-size:15px;font-weight:700;margin-top:6px}
+.fld.bad input,.fld.bad select{border-color:var(--bad)}
+.fld.bad .err{display:block}
+.fld .help{font-size:15px;color:var(--ink-2);margin-top:6px}
+.kc-result{border-radius:var(--r-lg);padding:22px;background:#fff;box-shadow:var(--shadow);border-top:6px solid var(--sky)}
+.kc-result[hidden]{display:none}
+.kc-result.ok{border-top-color:var(--leaf)}
+.kc-result.maybe{border-top-color:var(--yellow)}
+.kc-result.no{border-top-color:var(--ink-2)}
+.kc-head{display:flex;gap:14px;align-items:flex-start}
+.kc-ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none;background:var(--tint);color:var(--navy)}
+.kc-result.ok .kc-ic{background:var(--leaf-tint);color:var(--leaf)}
+.kc-result.maybe .kc-ic{background:var(--navy);color:var(--yellow)}
+.kc-ic svg{width:26px;height:26px}
+.kc-result h3{font-size:25px}
+.kc-result p{color:var(--ink-2);margin-top:6px}
+.kc-reqs{margin-top:16px;background:var(--tint);border-radius:var(--r);padding:16px 18px}
+.kc-reqs b{display:block;font-family:var(--head);font-size:20px}
+.kc-reqs ul{margin:8px 0 0;padding-left:20px}
+.kc-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.kc-empty{border-radius:var(--r-lg);padding:26px;border:2px dashed var(--line);color:var(--ink-2);text-align:center}
+.reqs{display:grid;gap:16px;margin-top:30px}
+@media (min-width:900px){.reqs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.req{background:#fff;border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow-sm);border:2px solid var(--line)}
+.req h3{font-size:24px;display:flex;align-items:center;gap:10px}
+.req h3 svg{width:26px;height:26px;color:var(--sky);flex:none}
+.req ul{margin:10px 0 0;padding-left:20px;color:var(--ink-2)}
+.req li{margin:4px 0}
+.req p{color:var(--ink-2);margin-top:10px}
+:target.req{border-color:var(--sky);box-shadow:0 0 0 4px rgba(46,155,214,.25)}
+.steps4{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+@media (min-width:640px){.steps4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.steps4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.steps4 li{counter-increment:s;background:#fff;border-radius:var(--r);padding:18px;box-shadow:var(--shadow-sm)}
+.steps4 li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--yellow);font-family:var(--head);font-weight:800;font-size:21px}
+.steps4 b{display:block;font-family:var(--head);font-size:21px;margin-top:10px;line-height:1.15}
+.steps4 span{display:block;color:var(--ink-2);font-size:16px;margin-top:4px}
+
+/* ============ PORTAL DEMO ============ */
+.portal{display:grid;gap:30px}
+@media (min-width:1000px){.portal{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}}
+.vseg{display:flex;flex-wrap:wrap;gap:6px;background:rgba(255,255,255,.1);border-radius:20px;padding:6px;margin-top:24px}
+.vseg button{flex:1 1 auto;min-height:44px;border:0;background:transparent;color:#fff;padding:8px 14px;border-radius:14px;font-weight:700;font-size:16px;white-space:nowrap}
+.vseg button[aria-selected=true]{background:var(--yellow);color:var(--navy)}
+.vdesc{color:#fff;margin-top:18px;max-width:46ch}
+.p-note{color:var(--on-navy-2);font-size:15.5px;margin-top:14px}
+.lap{background:#fff;color:var(--ink);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.chrome{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#EEF4FA;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.chrome i{width:11px;height:11px;border-radius:50%;background:#C3D2E2;flex:none}
+.chrome .url{flex:1;min-width:0;background:#fff;border-radius:999px;padding:5px 14px;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app{container-type:inline-size}
+.app-head{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.app-head img{width:40px;height:40px}
+.app-head b{display:block;font-family:var(--head);font-weight:800;font-size:20px;line-height:1}
+.app-head small{display:block;color:var(--ink-2);font-size:14px}
+.app-head .sd{margin-left:auto;font-size:13.5px;font-weight:700;background:var(--tint-2);color:var(--navy);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ppane{padding:18px;background:var(--tint);min-height:520px}
+.ppane[hidden]{display:none}
+.tile{background:#fff;border-radius:var(--r);padding:18px;box-shadow:0 0 0 1px var(--line);min-width:0}
+.tile h5{font-family:var(--head);font-weight:800;font-size:21px;margin:0 0 10px;line-height:1.1}
+.chip{display:inline-block;font-size:14px;font-weight:700;background:#fff;box-shadow:0 0 0 1px var(--line);padding:4px 12px;border-radius:999px;color:var(--ink-2)}
+.types{display:flex;flex-wrap:wrap;gap:6px}
+.types label{cursor:pointer;position:relative}
+.types input{position:absolute;opacity:0;width:1px;height:1px}
+.types span{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;font-size:15px;font-weight:700;background:#fff;box-shadow:inset 0 0 0 2px var(--line)}
+.types input:checked + span{background:var(--navy);color:#fff;box-shadow:none}
+.types input:focus-visible + span{outline:3px solid var(--sky);outline-offset:2px}
+.fld.bad .types span{box-shadow:inset 0 0 0 2px var(--bad)}
+.hint{font-size:15px;color:var(--ink-2);margin-top:10px}
+.row2{display:grid;gap:0 12px}
+@container (min-width:560px){.row2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.prf-head{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.prf-head h4{font-size:24px}
+.prf-head p{color:var(--ink-2);font-size:15.5px;margin-top:4px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;line-height:1.45;color:var(--ink-2);cursor:pointer}
+.consent input{width:22px;height:22px;min-height:0;margin:1px 0 0;flex:none;accent-color:var(--navy)}
+.fld.bad .consent{color:var(--bad)}
+.prf-acts{display:flex;justify-content:flex-end;margin-top:6px}
+.done-slip{max-width:440px;margin:6px auto 0;text-align:center;background:#fff;border-radius:var(--r-lg);padding:26px 22px;box-shadow:0 0 0 1px var(--line)}
+.done-slip img{width:64px;height:64px;margin:0 auto}
+.done-slip h4{font-size:25px;margin-top:10px}
+.done-slip .ref{font-family:var(--head);font-weight:800;font-size:30px;margin-top:8px}
+.done-slip .ref-l{display:block;font-size:14.5px;color:var(--ink-2)}
+.done-slip dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;text-align:left;font-size:16px;margin:16px 0 0;padding-top:14px;border-top:2px dashed var(--line)}
+.done-slip dt{color:var(--ink-2)}.done-slip dd{margin:0;font-weight:700;min-width:0;overflow-wrap:anywhere}
+.done-slip p{font-size:15.5px;color:var(--ink-2);margin-top:12px}
+.done-acts{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.signin{max-width:380px;margin:30px auto 0;text-align:center;background:#fff;border-radius:var(--r-lg);padding:28px 22px;box-shadow:0 0 0 1px var(--line)}
+.signin img{width:64px;height:64px;margin:0 auto}
+.signin h4{font-size:25px;margin:12px 0 6px}
+.signin p{color:var(--ink-2);font-size:16px}
+.signin small{display:block;margin-top:12px;color:var(--ink-2);font-size:14.5px}
+.gbtn{margin-top:18px;width:100%;min-height:50px;display:flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 2px var(--line);font-weight:700;color:var(--navy)}
+.gbtn svg{width:22px;height:22px}
+.rv-top{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.rv-top h4{font-size:25px}
+.rv-top p{color:var(--ink-2);font-size:15.5px;margin-top:2px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.filters button{min-height:40px;border:0;border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;background:#fff;box-shadow:inset 0 0 0 2px var(--line);color:var(--navy)}
+.filters button[aria-pressed=true]{background:var(--navy);color:#fff;box-shadow:none}
+.posts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+@container (min-width:620px){.posts{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+.post{position:relative;display:flex;flex-direction:column;text-align:left;border:0;padding:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px var(--line);color:var(--ink);transition:transform .2s}
+.post:hover{transform:translateY(-3px)}
+.thumb{position:relative;aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:flex-end;padding:10px 12px;overflow:hidden}
+.thumb b{font-family:var(--head);font-weight:800;font-size:19px;line-height:1.05;position:relative}
+.thumb small{font-size:13.5px;font-weight:700;position:relative;margin-bottom:2px}
+.thumb svg{position:absolute;right:-10px;top:-10px;width:84px;height:84px;opacity:.18}
+.ty-note .thumb{background:linear-gradient(140deg,var(--tint-2),#F4FAFE);color:var(--navy)}.ty-note .thumb small{color:var(--ink-2)}
+.ty-event .thumb{background:linear-gradient(140deg,#1C5627,#2A7230);color:#fff}.ty-event .thumb small{color:#EEF9EC}
+.ty-form .thumb{background:linear-gradient(140deg,var(--navy),var(--navy-2));color:#fff}.ty-form .thumb small{color:var(--yellow)}
+.ty-file .thumb{background:linear-gradient(140deg,#11507F,#1A6CA8);color:#fff}.ty-file .thumb small{color:#E2F3FC}
+.ty-meet .thumb{background:linear-gradient(140deg,var(--navy-3),var(--navy-2));color:#fff}.ty-meet .thumb small{color:#BFE3F7}
+.pbody{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;flex:1}
+.pbody b{font-size:15px;line-height:1.3}
+.pbody span{font-size:14px;color:var(--ink-2)}
+.pbody em{font-style:normal;margin-top:8px;align-self:flex-start;font-size:14px;font-weight:700;background:var(--navy);color:#fff;padding:5px 12px;border-radius:999px}
+.post .flag{position:absolute;left:8px;top:8px;z-index:1;font-size:12.5px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--yellow);color:var(--navy)}
+.post .flag.done{background:var(--leaf-tint);color:var(--leaf-ink)}
+.empty{color:var(--ink-2);padding:24px 0}
+.sgrid,.agrid{display:grid;gap:14px}
+@container (min-width:620px){.sgrid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.agrid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}}
+.agrid{margin-top:14px}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:15px}
+.plist li + li{border-top:1px solid var(--line)}
+.plist .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.plist li > span{flex:1;min-width:0}
+.plist small{display:block;color:var(--ink-2);font-size:14px}
+.mini{border:0;border-radius:999px;min-height:40px;min-width:40px;padding:6px 14px;font-size:14.5px;font-weight:700;background:var(--tint-2);color:var(--navy);white-space:nowrap}
+.mini.gold{background:var(--navy);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@container (min-width:620px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.kpi{background:#fff;border-radius:14px;padding:12px 14px;box-shadow:0 0 0 1px var(--line)}
+.kpi b{display:block;font-family:var(--head);font-weight:800;font-size:30px;line-height:1}
+.kpi span{font-size:14px;color:var(--ink-2);font-weight:700}
+table.mini-t{width:100%;border-collapse:collapse;font-size:15px}
+table.mini-t th{text-align:left;color:var(--ink-2);font-weight:700;font-size:14px;padding:0 6px 6px 0}
+table.mini-t td{padding:8px 6px 8px 0;border-top:1px solid var(--line);vertical-align:top}
+table.mini-t .n{text-align:right;padding-right:0}
+.pro{font-size:14px;font-weight:700;color:var(--ink-2)}
+.st{display:inline-block;font-size:13.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--leaf-tint);color:var(--leaf-ink);white-space:nowrap}
+.st.new{background:var(--tint-2);color:var(--navy)}
+.tg{border:0;background:transparent;padding:0;min-height:40px;display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:700;color:var(--ink-2)}
+.tg i{width:34px;height:20px;border-radius:999px;background:#A9B8C8;position:relative;transition:background .2s}
+.tg i::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .2s}
+.tg[aria-pressed=true]{color:var(--leaf-ink)}
+.tg[aria-pressed=true] i{background:var(--leaf)}
+.tg[aria-pressed=true] i::after{transform:translateX(14px)}
+.emails{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.emails span{display:inline-flex;align-items:center;gap:6px;background:var(--tint);border-radius:999px;padding:3px 4px 3px 12px;font-size:14.5px;max-width:100%}
+.emails em{font-style:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.emails button{border:0;background:#fff;border-radius:50%;width:32px;height:32px;flex:none;color:var(--navy)}
+.addrow{display:flex;gap:8px;margin-top:10px}
+.addrow input{flex:1;min-width:0;min-height:44px;padding:8px 14px;border-radius:999px;border:2px solid var(--line);font-size:16px}
+.roles{margin-top:14px}
+
+/* Google Form and Sheet pop-up */
+.fmodal{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center;visibility:hidden}
+@media (min-width:700px){.fmodal{align-items:center;padding:20px}}
+.fmodal.open{visibility:visible}
+.scrim{position:absolute;inset:0;background:rgba(7,42,79,.6);opacity:0;transition:opacity .25s}
+.fmodal.open .scrim{opacity:1}
+.fm-sheet{position:relative;width:min(700px,100%);max-height:92vh;max-height:92svh;display:flex;flex-direction:column;background:#F1F6FB;border-radius:24px 24px 0 0;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45);transform:translateY(30px);opacity:0;transition:transform .3s,opacity .3s}
+@media (min-width:700px){.fm-sheet{border-radius:24px}}
+.fmodal.open .fm-sheet{transform:none;opacity:1}
+.fm-bar{display:flex;align-items:center;gap:12px;padding:12px 12px 12px 18px;background:var(--navy);color:#fff}
+.fm-bar b{font-family:var(--head);font-weight:800;font-size:19px;line-height:1.15;flex:1;min-width:0}
+.fm-bar small{display:block;font-family:var(--body);font-weight:400;font-size:14px;color:var(--on-navy-2)}
+.x{width:48px;height:48px;border-radius:50%;border:0;background:var(--tint);display:grid;place-items:center;flex:none;color:var(--navy)}
+.x svg{width:20px;height:20px}
+.fm-bar .x{background:rgba(255,255,255,.14);color:#fff}
+.fm-body{overflow-y:auto;padding:16px;overscroll-behavior:contain}
+.fm-body iframe{width:100%;height:70vh;border:0;border-radius:12px;background:#fff}
+.gf{display:flex;flex-direction:column;gap:12px}
+.gf-card{background:#fff;border-radius:12px;padding:18px 20px;box-shadow:0 0 0 1px #DCE4EE}
+.gf-head{border-top:10px solid var(--navy)}
+.gf-head h4{font-family:var(--body);font-weight:700;font-size:23px;line-height:1.25}
+.gf-head p{font-size:16px;color:var(--ink-2);margin-top:8px}
+.gf-head .acct{font-size:15px;color:var(--ink-2);border-top:1px solid #E3E9F1;margin-top:12px;padding-top:10px}
+.gf-q p{font-size:17px;margin-bottom:8px}
+.gf-q label{display:flex;align-items:center;gap:12px;min-height:44px;font-size:16.5px;cursor:pointer}
+.gf-q input{width:20px;height:20px;accent-color:var(--navy);flex:none}
+.gf-q .req{color:var(--bad)}
+.gf-acts{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.gf-acts .btn{border-radius:10px}
+.gf-acts small{font-size:15px;color:var(--bad);font-weight:700}
+.gf-note{font-size:14.5px;color:var(--ink-2);text-align:center}
+.gs{background:#fff;border-radius:12px;box-shadow:0 0 0 1px #DCE4EE;overflow:hidden}
+.gs-top{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid #E3E9F1}
+.gs-top i{width:22px;height:28px;border-radius:3px;background:#188038;flex:none}
+.gs-top b{font-size:16px}
+.gs-top small{display:block;font-size:14px;color:var(--ink-2)}
+.gs-scroll{overflow-x:auto}
+table.gs-t{border-collapse:collapse;font-size:14.5px;min-width:640px;width:100%}
+table.gs-t th{background:#F1F4F8;color:#33435A;font-weight:700;text-align:left;padding:7px 10px;border:1px solid #E3E9F1;white-space:nowrap}
+table.gs-t td{padding:7px 10px;border:1px solid #E3E9F1;white-space:nowrap}
+table.gs-t tr.new td{background:#E6F4E7}
+.gs-note{font-size:14.5px;color:var(--ink-2);padding:10px 14px}
+
+/* ============ SCHOOL LIFE ============ */
+.mu{display:grid;gap:22px;align-items:center;margin-top:30px}
+@media (min-width:900px){.mu{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.mu-photos{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.mu-photos img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow)}
+.mu-photos img:first-child{aspect-ratio:auto;border-radius:var(--r-lg) var(--r-lg) var(--r-lg) 60px}
+.mu .big{font-family:var(--head);font-weight:800;font-size:clamp(60px,14vw,96px);line-height:.9;color:var(--sky)}
+.event .when{font-size:15px;font-weight:700;color:var(--ink-2)}
+.msg-card{display:grid;gap:22px;align-items:center;background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:28px 22px;margin-top:40px;position:relative;overflow:hidden}
+.msg-card img{width:140px;height:140px;border-radius:50%;background:#fff;padding:8px;box-shadow:0 0 0 6px var(--sky)}
+.msg-card small{display:block;font-weight:700;color:var(--yellow);font-size:16px}
+.msg-card h3{font-size:clamp(26px,5.6vw,34px);margin-top:4px}
+.msg-card .role{color:var(--on-navy-2);font-size:16px;margin-top:2px}
+.msg-card blockquote{margin:14px 0 0;color:var(--on-navy-2);font-style:italic;max-width:56ch}
+@media (min-width:800px){.msg-card{grid-template-columns:180px 1fr;padding:36px 40px}.msg-card img{width:180px;height:180px}}
+
+/* ============ ANNOUNCEMENTS ============ */
+.news{display:grid;gap:14px;margin-top:28px}
+@media (min-width:800px){.news{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ann{background:#fff;border-radius:var(--r-lg);padding:20px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:6px;border-top:5px solid var(--sky)}
+.ann time{font-weight:700;font-size:15px;color:var(--ink-2)}
+.ann h3{font-size:22px}
+.ann p{color:var(--ink-2);font-size:16.5px}
+.news-how{display:flex;gap:12px;align-items:flex-start;margin-top:20px;color:var(--ink-2);font-size:16px;max-width:70ch}
+.news-how svg{width:26px;height:26px;flex:none;color:var(--leaf)}
+
+/* ============ FACEBOOK ============ */
+.fbgrid{display:grid;gap:18px;margin-top:28px;justify-items:center}
+@media (min-width:900px){.fbgrid{grid-template-columns:minmax(0,500px) minmax(0,380px);justify-content:center;align-items:start}}
+.fb-embed{width:100%;max-width:500px;background:#fff;border-radius:var(--r-lg);padding:12px;box-shadow:var(--shadow);min-height:200px;overflow:hidden}
+.fb-embed .fb-page{width:100%}
+.fb-wait{display:grid;place-items:center;min-height:180px;color:var(--ink-2);font-size:16px;text-align:center;padding:20px}
+.fb-embed.loaded .fb-wait{display:none}
+.fbgrid.fb-off{grid-template-columns:minmax(0,420px)}
+.fbgrid.fb-off .fb-embed{display:none}
+.fb-card{width:100%;max-width:500px;background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:28px 24px;text-align:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.fb-card::before{content:"";position:absolute;left:-50px;bottom:-70px;width:200px;height:200px;border-radius:50%;background:var(--sky);opacity:.3}
+.fb-card > *{position:relative}
+.fb-card img{width:96px;height:96px;margin:0 auto;border-radius:50%;background:#fff;padding:5px}
+.fb-card h3{margin-top:14px;font-size:28px}
+.fb-card p{color:var(--on-navy-2);margin-top:8px}
+.fb-card .btn{margin-top:18px;width:100%}
+.fb-card .sm{font-size:15px;color:var(--on-navy-2);margin-top:12px}
+
+/* ============ VISIT ============ */
+.visit{display:grid;gap:22px;margin-top:28px}
+@media (min-width:900px){.visit{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}}
+.info{list-style:none;margin:0;padding:0;background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow);overflow:hidden}
+.info li{display:flex;gap:14px;align-items:flex-start;padding:16px 20px;border-top:1px solid var(--line)}
+.info li:first-child{border-top:0}
+.info li > svg{width:26px;height:26px;color:var(--sky);flex:none;margin-top:2px}
+.info b{display:block;font-size:15px;color:var(--ink-2)}
+.info a{font-weight:700}
+.info li:target{background:var(--tint)}
+.mapcard{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--tint);display:flex;flex-direction:column}
+.map-art{flex:1;min-height:220px;display:grid;place-items:center;align-content:center;gap:10px;text-align:center;padding:24px;background-color:var(--tint);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:34px 34px;color:var(--navy);font-weight:700}
+.map-art svg{width:54px;height:54px;color:var(--navy)}
+.mapcard .btn{margin:16px;align-self:stretch}
+.ask-card{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:var(--tint);border-radius:var(--r-lg);padding:20px;margin-top:22px}
+.ask-card p{flex:1 1 260px;color:var(--ink-2)}
+.ask-card b{display:block;color:var(--navy);font-family:var(--head);font-size:22px}
+
+/* ============ PROPOSAL PART ============ */
+.prop-head{padding:56px 0 72px}
+.prop-head h2{max-width:20ch}
+.prop-meta{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:22px;font-size:16px;color:var(--on-navy-2)}
+.prop-meta b{display:block;color:#fff;font-size:17px}
+.fit{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:16px;counter-reset:f}
+@media (min-width:700px){.fit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.fit{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fit li{counter-increment:f;background:#fff;border-radius:var(--r-lg);padding:20px;box-shadow:var(--shadow-sm)}
+.fit li::before{content:"0" counter(f);display:block;font-family:var(--head);font-weight:800;font-size:34px;line-height:1;color:var(--sky)}
+.fit .was{color:var(--ink-2);font-size:16px;margin-top:8px}
+.fit .now{font-family:var(--head);font-weight:700;font-size:21px;line-height:1.2;margin-top:8px}
+/* Facebook stays: 3 steps */
+.flow{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:14px}
+@media (min-width:900px){.flow{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}}
+.flow li{position:relative;background:#fff;border-radius:var(--r-lg);padding:24px 22px;box-shadow:var(--shadow);text-align:center}
+@media (min-width:900px){.flow li{margin:0 22px}.flow li:first-child{margin-left:0}.flow li:last-child{margin-right:0}}
+.flow .ic{width:72px;height:72px;margin:0 auto;border-radius:22px;background:var(--navy);color:var(--yellow);display:grid;place-items:center}
+.flow .ic svg{width:38px;height:38px}
+.flow b{display:block;font-family:var(--head);font-weight:800;font-size:23px;margin-top:14px;line-height:1.15}
+.flow span{display:block;color:var(--ink-2);margin-top:6px;font-size:16.5px}
+.flow .arrow-d{display:grid;place-items:center;color:var(--sky);height:30px;margin:-4px 0}
+.flow .arrow-d svg{width:30px;height:30px;transform:rotate(90deg)}
+@media (min-width:900px){.flow .arrow-d{position:absolute;right:-34px;top:50%;margin:0;height:auto;transform:translateY(-50%);z-index:2}.flow .arrow-d svg{transform:none}}
+.flow-note{margin-top:24px;text-align:center;color:var(--ink-2)}
+/* Messenger replies */
+.replies{display:grid;gap:16px;margin-top:30px}
+@media (min-width:900px){.replies{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.reply{background:#fff;border-radius:var(--r-lg);padding:18px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:10px}
+.reply-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.reply-top b{font-family:var(--head);font-weight:800;font-size:21px}
+.bubble{background:var(--tint);border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:16.5px;line-height:1.55;-webkit-user-select:text;user-select:text;overflow-wrap:anywhere}
+.bubble.sel{box-shadow:0 0 0 3px var(--sky)}
+.reply-acts{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.copy-hint{display:none;font-weight:700;color:var(--navy);font-size:15.5px}
+.copy-hint.on{display:block}
+.reply-acts a{font-weight:700;font-size:15.5px}
+/* bonuses */
+.bonus{background:#fff;border-radius:28px;padding:24px 20px;box-shadow:var(--shadow);border:3px dashed var(--sky);margin-top:30px}
+@media (min-width:800px){.bonus{padding:34px}}
+.bonus-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.zero{background:var(--navy);color:var(--yellow);font-family:var(--head);font-weight:800;font-size:30px;line-height:1;border-radius:18px;padding:12px 16px}
+.zero small{display:block;font-family:var(--body);font-size:14px;color:#fff;font-weight:700;margin-top:2px}
+.bonus-list{display:grid;gap:20px;margin-top:24px}
+@media (min-width:1000px){.bonus-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.bitem{background:var(--tint);border-radius:var(--r-lg);padding:20px;display:flex;flex-direction:column;gap:10px}
+.bitem h3{font-size:23px}
+.bitem p{color:var(--ink-2);font-size:16.5px}
+.bitem .btn{align-self:flex-start}
+.msgr{background:#fff;border-radius:999px;display:flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;box-shadow:var(--shadow-sm);align-self:flex-start;color:var(--navy);text-decoration:none;font-weight:700;min-height:52px}
+.msgr i{width:38px;height:38px;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:#fff;flex:none}
+.msgr i svg{width:20px;height:20px}
+.fbpost{background:#fff;border-radius:14px;box-shadow:var(--shadow-sm);overflow:hidden;font-size:15px}
+.fbpost-h{display:flex;align-items:center;gap:10px;padding:12px}
+.fbpost-h img{width:38px;height:38px}
+.fbpost-h b{display:block;font-size:15px}
+.fbpost-h span{font-size:13.5px;color:var(--ink-2)}
+.fbpost > p{padding:0 12px 10px;font-size:15px}
+.fbpost .lc{background:#F0F2F5;border-top:1px solid #E1E4E8}
+.fbpost .lc img{width:100%;aspect-ratio:1200/630;object-fit:cover}
+.fbpost .lc div{padding:10px 12px}
+.fbpost .lc small{display:block;font-size:13px;color:#4B5563}
+.fbpost .lc b{display:block;font-size:16px;color:#111827;line-height:1.3;margin-top:2px}
+.fbpost .lc span{display:block;font-size:14px;color:#4B5563;margin-top:2px}
+.poster-prev{width:100%;max-width:240px;aspect-ratio:186/272;overflow:hidden;border-radius:10px;box-shadow:var(--shadow);background:#fff;position:relative;align-self:center}
+.poster-prev .poster{position:absolute;left:0;top:0;transform-origin:0 0}
+/* the A4 poster itself (screen preview and print share this markup) */
+.poster{width:186mm;height:272mm;background:#fff;color:var(--navy);font-family:var(--body);display:flex;flex-direction:column;align-items:center;text-align:center;padding:12mm 12mm 10mm;position:relative;overflow:hidden}
+.poster,.poster *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.poster .top-band{position:absolute;left:0;right:0;top:0;height:96mm;background:var(--navy)}
+.poster .top-band svg{position:absolute;left:0;bottom:-1px;width:100%;height:20mm}
+.poster > *:not(.top-band){position:relative}
+.poster .pc{width:30mm;height:30mm;border-radius:50%;background:#fff;padding:1.2mm}
+.poster h1{font-family:var(--head);font-weight:800;font-size:15mm;line-height:1.05;color:#fff;margin-top:4mm;white-space:nowrap}
+.poster .ps{color:var(--yellow);font-weight:700;font-size:5.4mm;margin-top:1.5mm}
+.poster .qr{width:98mm;height:98mm;margin-top:24mm;border-radius:6mm;border:2.5mm solid var(--sky);padding:3.5mm;background:#fff}
+.poster .scan{font-family:var(--head);font-weight:800;font-size:11mm;margin-top:7mm;line-height:1}
+.poster .url{font-weight:700;font-size:7mm;margin-top:2.5mm;color:var(--navy)}
+.poster .row{display:flex;gap:4mm;margin-top:7mm;font-size:4.6mm;font-weight:700}
+.poster .row span{background:var(--tint);border-radius:4mm;padding:2.2mm 4mm}
+.poster .addr{margin-top:auto;font-size:4.2mm;color:var(--ink-2);line-height:1.4}
+
+/* ============ WORK CAROUSEL ============ */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:28px -20px 0;padding:4px 20px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;min-height:44px;border:0;border-radius:999px;background:var(--tint);color:var(--navy);font-weight:700;font-size:16px;padding:8px 16px;white-space:nowrap}
+.tabs button[aria-selected=true]{background:var(--navy);color:#fff}
+.car{position:relative;margin-top:20px}
+.car-frame{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.view{position:relative;height:min(62vh,600px);overflow:hidden;background:#F2F6FA}
+.view iframe{position:absolute;left:0;top:0;border:0;background:#fff;transform-origin:0 0}
+.view .poster-shot{position:absolute;inset:0;overflow:hidden;background:#fff}
+.view .poster-shot img{width:100%;height:auto}
+.view.poster-mode{height:auto}
+.view.poster-mode .poster-shot{position:relative;inset:auto}
+.view.poster-mode .poster-shot img{max-height:min(70vh,640px);object-fit:cover;object-position:top}
+.shield{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:24px;background:linear-gradient(0deg,rgba(7,42,79,.6),transparent 45%);border:0;width:100%;cursor:pointer;color:#fff}
+.shield span{background:rgba(7,42,79,.92);border-radius:999px;padding:12px 20px;font-weight:700}
+.view.live .shield{opacity:0;pointer-events:none}
+.done-explore{position:absolute;top:12px;right:12px;z-index:3;display:none}
+.view.live .done-explore{display:inline-flex}
+.loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-2);pointer-events:none}
+.arrows{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+.arrow{width:52px;height:52px;border-radius:50%;border:0;background:var(--navy);color:#fff;display:grid;place-items:center}
+.arrow svg{width:22px;height:22px}
+.car-info{display:grid;gap:24px;margin-top:10px}
+@media (min-width:900px){.car-info{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.counter{font-weight:700;color:var(--ink-2)}
+.car-info h3{font-size:clamp(26px,4vw,34px);margin-top:4px}
+.car-info .kind{color:var(--ink-2);margin-top:6px}
+.car-info .btn{margin-top:16px}
+.add-label{color:var(--ink-2);margin-bottom:12px}
+.adds{display:flex;flex-wrap:wrap;gap:8px}
+.adds button{min-height:44px;border:0;border-radius:999px;padding:8px 16px;font-size:15.5px;font-weight:700;background:#fff;color:var(--navy);box-shadow:inset 0 0 0 2px var(--line);display:flex;gap:8px;align-items:center}
+.adds button[aria-pressed=true]{background:var(--navy);color:#fff;box-shadow:none}
+.adds i{font-style:normal;font-weight:800}
+.nopreview{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--ink-2);background:#F2F6FA}
+.rep{font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff;line-height:1.5;transform-origin:0 0;container-type:inline-size;container-name:rep}
+.r-bar{display:flex;align-items:center;gap:14px;padding:16px 40px}.r-logo{width:44px;height:44px;border-radius:50%}
+.r-nav{margin-left:auto;display:flex;gap:22px;font-size:14px}
+.r-hero{padding:70px 40px;color:#fff}.r-hero h1{font-family:Georgia,serif;font-size:52px;line-height:1.1;margin:0 0 14px}
+.r-hero p{font-size:17px;max-width:620px}.r-btn{display:inline-block;padding:11px 18px;border-radius:4px;font-weight:700;font-size:14px;margin:18px 10px 0 0}
+.r-sec{padding:46px 40px}.r-sec h2{font-family:Georgia,serif;font-size:32px;margin:0 0 18px}
+.r-grid{display:grid;gap:18px}.r-g2{grid-template-columns:1fr 1fr}.r-g3{grid-template-columns:repeat(3,1fr)}.r-g4{grid-template-columns:repeat(4,1fr)}.r-g5{grid-template-columns:repeat(5,1fr)}
+.r-card{border-radius:8px;padding:18px;font-size:14px}.r-card b{display:block;font-size:16px;margin-bottom:6px}
+.r-img{border-radius:8px;min-height:150px}.r-stat b{display:block;font-size:40px;font-family:Georgia,serif}
+.r-foot{padding:34px 40px;font-size:13px;line-height:1.7}.r-side{display:grid;grid-template-columns:270px 1fr;min-height:1400px}
+@container rep (max-width:600px){.r-g2,.r-g3,.r-g4,.r-g5{grid-template-columns:1fr}.r-nav{display:none}.r-hero{padding:40px 20px}.r-hero h1{font-size:34px}.r-sec{padding:30px 20px}.r-bar{padding:14px 20px}.r-foot{padding:24px 20px}.r-side{grid-template-columns:1fr}.r-side > aside{display:none}}
+
+/* ============ PACKAGES ============ */
+.menu{display:grid;gap:18px;margin-top:34px;align-items:stretch}
+@media (min-width:1000px){.menu{grid-template-columns:1fr 1.1fr 1fr;align-items:center}}
+.course{background:#fff;border-radius:28px;padding:28px 22px;text-align:center;display:flex;flex-direction:column;box-shadow:var(--shadow);border:3px solid transparent}
+.course.best{background:var(--navy);color:#fff;padding:36px 24px;position:relative;overflow:hidden}
+.course.best::before{content:"";position:absolute;right:-70px;top:-70px;width:180px;height:180px;border-radius:50%;background:var(--sky);opacity:.3}
+.course > *{position:relative}
+@media (max-width:999px){.course.best{order:-1}}
+.course .chef{font-weight:700;font-size:15px;min-height:24px;color:var(--leaf-ink)}
+.course.best .chef{color:var(--yellow)}
+.course h3{font-size:clamp(32px,6vw,40px);margin-top:4px}
+.course .for{color:var(--ink-2);font-size:16px;margin:8px auto 0;max-width:30ch}
+.course.best .for{color:var(--on-navy-2)}
+.course .price{font-family:var(--head);font-weight:800;font-size:clamp(44px,9vw,56px);line-height:1;margin-top:16px}
+.course .reg{font-size:15.5px;color:var(--ink-2);margin-top:8px}
+.course.best .reg{color:var(--on-navy-2)}
+.course .reg s{margin-right:8px}
+.course .reg b{color:var(--leaf-ink)}
+.course.best .reg b{color:var(--yellow)}
+.course .upnote{font-size:15.5px;font-weight:700;margin-top:6px}
+.course .orn{width:48px;height:4px;border-radius:4px;background:var(--sky);margin:20px auto 16px}
+.course ul{list-style:none;margin:0;padding:0;font-size:16px;line-height:1.5;flex:1}
+.course li{padding:3px 0}
+.course li.hl{font-weight:700}
+.course li.more{color:var(--ink-2);font-weight:700}
+.course.best li.more{color:var(--on-navy-2)}
+.course .btn{margin-top:22px;align-self:center;min-width:200px}
+.course.chosen:not(.best){border-color:var(--navy)}
+.course.best.chosen{box-shadow:0 0 0 4px var(--yellow),var(--shadow)}
+.domain{margin-top:44px;text-align:center}
+.domain .lab{color:var(--ink-2);font-weight:700}
+.domain .host{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;font-size:clamp(28px,7vw,52px);line-height:1.1;margin-top:6px;word-break:break-all;color:var(--navy)}
+.domain .host svg{width:32px;height:32px;color:var(--sky);flex:none}
+.domain p:last-child{color:var(--ink-2);max-width:56ch;margin:10px auto 0}
+.alacarte{margin-top:36px;text-align:center}
+.alacarte p{font-family:var(--head);font-weight:700;font-size:24px}
+.alacarte .btn{margin-top:12px}
+
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:70;visibility:hidden}
+.drawer.open{visibility:visible}
+.drawer.open .scrim{opacity:1}
+.sheet{position:absolute;top:0;right:0;bottom:0;width:min(580px,100%);background:#fff;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.drawer.open .sheet{transform:none}
+.sheet-head{padding:22px 20px 12px;display:flex;justify-content:space-between;gap:14px}
+.sheet-head h3{font-size:30px}
+.sheet-head p{color:var(--ink-2);font-size:16px;margin-top:4px}
+.sheet-body{flex:1;overflow-y:auto;padding:0 20px 20px;overscroll-behavior:contain}
+.grp{font-family:var(--head);font-weight:800;font-size:22px;margin:22px 0 4px}
+.grp small{display:block;font-family:var(--body);font-weight:400;font-size:15px;color:var(--ink-2)}
+.opt{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.opt input{appearance:none;-webkit-appearance:none;width:26px;height:26px;margin:2px 0 0;border-radius:8px;box-shadow:inset 0 0 0 2px var(--ink-2);background:#fff;cursor:pointer;display:grid;place-content:center}
+.opt input:checked,.opt input:disabled{background:var(--navy);box-shadow:none}
+.opt input:checked::after,.opt input:disabled::after{content:"";width:7px;height:13px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.opt label{cursor:pointer}
+.opt .name{display:block;font-weight:700}
+.opt .desc{display:block;color:var(--ink-2);font-size:15.5px;margin-top:2px;line-height:1.5}
+.opt .pp{font-weight:700;white-space:nowrap;text-align:right}
+.opt .pp small{display:block;font-weight:400;color:var(--ink-2);font-size:14px}
+.opt .inpkg{display:block;font-size:14.5px;font-weight:700;color:var(--leaf-ink);margin-top:3px}
+.sheet-foot{padding:14px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px}
+.sheet-foot small{display:block;color:var(--ink-2);font-size:15px}
+.sheet-foot strong{font-family:var(--head);font-weight:800;font-size:32px;line-height:1}
+
+/* ============ QUOTATION ============ */
+.quote{display:grid;gap:40px;margin-top:34px}
+@media (min-width:1000px){.quote{grid-template-columns:400px minmax(0,1fr);gap:56px;align-items:start}}
+.ticket-col{max-width:440px;width:100%;margin:0 auto}
+.rail-bar{height:22px;background:var(--navy);border-radius:6px;position:relative;z-index:2}
+.rail-bar::after{content:"";position:absolute;left:50%;top:15px;width:54px;height:15px;margin-left:-27px;background:var(--yellow);border-radius:0 0 8px 8px}
+.ticket{background:#FFFEFA;color:var(--navy);margin:-4px 14px 0;padding:28px 20px 36px;box-shadow:0 22px 40px -18px rgba(11,58,107,.45);-webkit-mask:radial-gradient(circle 8px at 50% 100%,#0000 98%,#000) 50% 100%/18px 100% repeat-x;mask:radial-gradient(circle 8px at 50% 100%,#0000 98%,#000) 50% 100%/18px 100% repeat-x}
+.t-head{text-align:center;padding-bottom:14px;border-bottom:2px dashed var(--line)}
+.t-head b{display:block;font-family:var(--head);font-weight:800;font-size:24px;line-height:1.1}
+.t-head span{font-size:15px;color:var(--ink-2)}
+.t-lines{list-style:none;margin:14px 0 0;padding:0}
+.t-lines li{display:flex;justify-content:space-between;gap:12px;font-size:15.5px;padding:3px 0}
+.t-lines li span:last-child{white-space:nowrap;font-weight:700}
+.t-lines li.pkg{font-family:var(--head);font-weight:800;font-size:23px}
+.t-lines li.sub{padding:1px 0 1px 12px;font-size:15px;color:var(--ink-2)}
+.t-lines li.bon{color:var(--leaf-ink);font-weight:700}
+.t-lines li.new{animation:print .5s ease-out}
+@keyframes print{from{opacity:0;background:var(--tint)}to{opacity:1;background:transparent}}
+.t-sum{border-top:2px dashed var(--line);margin-top:12px;padding-top:12px}
+.t-row{display:flex;justify-content:space-between;gap:10px;font-size:15.5px;color:var(--ink-2);padding:2px 0}
+.t-row.save span:last-child{color:var(--leaf-ink);font-weight:700}
+.t-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:8px;padding-top:10px;border-top:2px solid var(--navy)}
+.t-total span{font-weight:700}
+.t-total strong{font-family:var(--head);font-weight:800;font-size:36px;line-height:1}
+.q-side .big{font-family:var(--head);font-weight:800;font-size:clamp(52px,12vw,84px);line-height:.95}
+.q-side .big-sub{color:var(--ink-2);margin-top:10px}
+.q-side .big-sub b{color:var(--navy)}
+.warranty{margin-top:24px;display:flex;gap:16px;align-items:flex-start}
+.warranty svg{flex:none;width:34px;height:34px;color:var(--sky)}
+.warranty b{display:block;font-family:var(--head);font-weight:800;font-size:23px;line-height:1.1}
+.warranty span{display:block;color:var(--ink-2);margin-top:4px;max-width:50ch}
+.upsell{margin-top:26px;background:var(--tint);border-radius:var(--r-lg);padding:20px}
+.upsell b{display:block;font-family:var(--head);font-weight:800;font-size:24px;line-height:1.1}
+.upsell p{color:var(--ink-2);margin-top:6px}
+.upsell .btn{margin-top:12px}
+.q-acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.reach{margin-top:18px;color:var(--ink-2);max-width:56ch}
+.steps{list-style:none;margin:44px 0 0;padding:0;display:grid;gap:18px;counter-reset:s}
+@media (min-width:640px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.steps li{counter-increment:s}
+.steps li::before{content:"0" counter(s);display:block;font-family:var(--head);font-weight:800;font-size:34px;line-height:1;color:var(--sky);margin-bottom:6px}
+.steps b{display:block;font-size:18px}
+.steps span{display:block;color:var(--ink-2);font-size:16px;margin-top:2px}
+.terms-link{margin-top:26px}
+.terms-link button{background:none;border:0;padding:8px 0;min-height:44px;color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.terms{display:none;margin-top:8px;color:var(--ink-2);max-width:70ch;font-size:16px}
+.terms.open{display:block}
+.terms ul{margin:0;padding-left:20px}
+.terms li{margin:5px 0}
+.signoff{text-align:center;padding:72px 0 88px}
+.signoff .crest-sm{width:84px;height:84px;margin:0 auto;border-radius:50%;background:#fff;padding:4px}
+.signoff h2{margin-top:20px}
+.signoff .names{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:30px}
+.signoff .names p{color:var(--on-navy-2);font-size:16px}
+.signoff .names strong{display:block;font-family:var(--head);font-size:26px;font-weight:800;margin:4px 0 2px;line-height:1.1}
+.signoff .fine{margin:22px auto 0;color:var(--on-navy-2);font-size:15.5px;max-width:60ch}
+.signoff .again{margin-top:26px;background:none;border:0;color:#fff;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+
+/* order pill, bottom bar, toast, chat */
+.pill{position:fixed;right:16px;left:16px;bottom:calc(var(--bbar) + 12px);z-index:45;display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--navy);color:#fff;border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 16px 40px rgba(0,0,0,.35);transform:translateY(200%);visibility:hidden;transition:transform .35s,visibility .35s}
+.pill.show{transform:none;visibility:visible}
+.pill small{display:block;color:var(--on-navy-2);font-size:14px;white-space:nowrap}
+.pill strong{font-family:var(--head);font-weight:800;font-size:25px;line-height:1}
+@media (min-width:700px){.pill{left:auto;right:22px}}
+.bbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -8px 24px -12px rgba(11,58,107,.45)}
+.bbar a{min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:14px;text-decoration:none;font-weight:700;font-size:15px;color:var(--navy);background:var(--tint)}
+.bbar a svg{width:22px;height:22px}
+.bbar a.go{background:var(--navy);color:var(--yellow)}
+@media (max-width:899px){:root{--bbar:76px}}
+@media (min-width:900px){.bbar{display:none}}
+.toast{position:fixed;left:50%;top:calc(var(--bar) + 14px);transform:translate(-50%,-10px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:16px;font-size:16px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:120;box-shadow:0 10px 30px rgba(0,0,0,.3);width:max-content;max-width:calc(100vw - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.cpanel{position:fixed;right:12px;left:12px;bottom:calc(var(--bbar) + 12px);z-index:60;height:min(560px,calc(100svh - var(--bar) - var(--bbar) - 40px));background:#fff;border-radius:24px;box-shadow:0 30px 70px -20px rgba(0,0,0,.5),0 0 0 1px var(--line);display:flex;flex-direction:column;overflow:hidden;transform:translateY(20px);opacity:0;visibility:hidden;transition:transform .3s,opacity .3s,visibility .3s}
+@media (min-width:600px){.cpanel{left:auto;right:22px;width:380px}}
+.cpanel.open{transform:none;opacity:1;visibility:visible}
+.cp-head{background:var(--navy);color:#fff;padding:12px 12px 12px 16px;display:flex;align-items:center;gap:12px}
+.cp-head img{width:40px;height:40px}
+.cp-head b{display:block;font-family:var(--head);font-weight:800;font-size:21px;line-height:1}
+.cp-head small{display:block;color:var(--on-navy-2);font-size:14px}
+.cp-head .x{margin-left:auto;background:rgba(255,255,255,.14);color:#fff}
+.cp-add{background:var(--tint);padding:8px 16px;font-size:15px;display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cp-add[hidden]{display:none}
+.cp-add button{border:0;background:var(--navy);color:#fff;border-radius:999px;min-height:40px;padding:6px 14px;font-weight:700;font-size:14.5px}
+.msgs{flex:1;overflow-y:auto;padding:16px 14px 10px;display:flex;flex-direction:column;gap:10px;background:#F4F9FD}
+.msg{max-width:88%;padding:10px 14px;border-radius:18px;font-size:16px;line-height:1.5}
+.msg.bot{background:#fff;box-shadow:0 0 0 1px var(--line);border-bottom-left-radius:6px;align-self:flex-start}
+.msg.me{background:var(--navy);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.msg.typing{display:flex;gap:5px;padding:14px}
+.msg.typing i{width:8px;height:8px;border-radius:50%;background:var(--ink-2);animation:blink 1s infinite}
+.msg.typing i:nth-child(2){animation-delay:.15s}.msg.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;border-top:1px solid var(--line);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:0;border-radius:999px;min-height:40px;padding:6px 14px;font-size:15px;background:var(--tint);color:var(--navy);font-weight:700}
+.ask{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--line)}
+.ask input{flex:1;min-height:48px;padding:10px 16px;border-radius:999px;border:2px solid var(--line);font-size:16px;min-width:0}
+.fbnote{font-size:16px;color:var(--ink-2)}
+
+/* ============ PRINT ============ */
+#printArea,#posterArea{display:none}
+@page{size:A4;margin:12mm}
+@media print{
+  html,body{background:#fff !important;color:#000;padding:0 !important}
+  body > *:not(#printArea):not(#posterArea){display:none !important}
+  body:not(.print-poster) #printArea{display:block;font-size:11pt;font-family:Arial,Helvetica,sans-serif}
+  body.print-poster #posterArea{display:block}
+  .pq-head{display:flex;justify-content:space-between;align-items:start;border-bottom:2px solid #000;padding-bottom:10px}
+  .pq-head h1{font-family:Arial,Helvetica,sans-serif;font-size:20pt;color:#000}
+  .pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0;font-size:10.5pt}
+  .pq-grid b{display:block}
+  table.pq{width:100%;border-collapse:collapse;font-size:10.5pt}
+  table.pq th,table.pq td{border-bottom:1px solid #999;padding:6px 4px;text-align:left;vertical-align:top}
+  table.pq td.n{text-align:right;white-space:nowrap}
+  table.pq tr{break-inside:avoid}
+  table.pq tr.sum td{border-bottom:0;padding:4px}
+  table.pq tr.first td{border-top:2px solid #000}
+  .pq-terms{font-size:10pt;margin-top:14px}
+  .pq-terms ul{margin:4px 0;padding-left:16px}
+  .pq-sign{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px;font-size:10.5pt}
+  .pq-sign div{border-top:1px solid #000;padding-top:4px}
+}
+.sprite{position:absolute}
+.wave-bg-tint{background:var(--tint)}.wave-bg-navy{background:var(--navy)}.wave-bg-white{background:#fff}
+section.pt-m{padding-top:36px}section.pt-s{padding-top:20px}section.pt-0{padding-top:0}
+.full{width:100%}.kc-help{margin-top:12px;font-size:15px;color:var(--ink-2)}
+.mt-20{margin-top:20px}.mt-44{margin-top:44px}.mt-4{margin-top:4px}
+.album-btn{align-self:flex-start;margin-top:8px}
+.small-note{margin-top:20px;font-size:15.5px}
+.map-sub{font-weight:400;color:var(--ink-2)}
+.tagsm{font-weight:400}
+.h2-sm{font-size:clamp(28px,5.6vw,40px)}
+.fs15{font-size:15px}
+.fbpost{margin:0}
+
+.fb-card a:not(.btn){color:var(--yellow)}
+.fld > label.consent{display:flex;font-weight:400;color:var(--ink-2);font-size:15.5px;margin:0}
+.fld > span[id]{display:block;font-weight:700;font-size:16px;margin-bottom:6px;color:var(--navy)}
+@media (max-width:459px){.vseg{display:grid;grid-template-columns:1fr 1fr}}
+@media (min-width:768px){.tabs{margin:28px 0 0;padding:4px 0}}
+[hidden]{display:none !important}
+.info li > div{min-width:0;overflow-wrap:anywhere}
+
+.fld .note{display:none;color:var(--ink-2);font-size:15px;margin-top:6px}
+.fld .note.on{display:block}
+.types input{min-height:0}
+
+/* ============ ENGINE ADDITIONS ============ */
+.wave-bg-dark{background:var(--navy)}
+.ph-empty{aspect-ratio:4/3;width:100%;display:grid;place-items:center;background:linear-gradient(140deg,var(--tint),var(--tint-2));color:var(--navy);font-weight:700;text-align:center;padding:16px}
+.blob .ph-empty{height:100%;aspect-ratio:auto}
+.mu-photos .ph-empty{border-radius:var(--r-lg);aspect-ratio:3/4}
+/* generic request flow */
+.fld textarea{width:100%;min-height:96px;padding:10px 14px;border-radius:12px;border:2px solid var(--line);background:#fff;font-size:17px;color:var(--navy);resize:vertical}
+.fld textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(46,155,214,.25)}
+.fld.bad textarea{border-color:var(--bad)}
+.fld .help{font-size:15px;color:var(--ink-2);margin-top:6px}
+.opt-l{font-weight:400;color:var(--ink-2)}
+.row2 > .fld[data-fid]:has(textarea),.row2 > .fld[data-fid]:has(.cat),.row2 > .fld[data-fid]:has(.types){grid-column:1/-1}
+.cat{list-style:none;margin:0;padding:0;background:#fff;border-radius:12px;box-shadow:inset 0 0 0 2px var(--line)}
+.cat li{display:flex;align-items:center;gap:10px;padding:10px 12px;border-top:1px solid var(--line)}
+.cat li:first-child{border-top:0}
+.cat li > div:first-child{flex:1;min-width:0}
+.cat b{display:block;font-size:16px}
+.cat small{display:block;color:var(--ink-2);font-size:14px}
+.cat .cp{font-weight:700;white-space:nowrap}
+.qty{display:flex;align-items:center;gap:6px}
+.qty output{min-width:22px;text-align:center;font-weight:700}
+.cat-total{display:flex;justify-content:space-between;margin-top:10px;font-weight:700}
+.cat-total b{font-family:var(--head);font-size:22px}
+button.st{border:0;cursor:pointer;min-height:32px}
+.mini-t td .mini{margin-top:6px}
+.brand b{font-size:clamp(17px,4.8vw,21px);line-height:1.05}
+.brand span{min-width:0}
+.brand{min-width:0;flex:1}
+.brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand span{min-width:0;overflow:hidden}
+@media (max-width:1119px){.brand{flex:1 1 auto}}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;padding:0 4px}
+.tbl-scroll table.mini-t{min-width:520px}
+
+:root{--navy:#22237A;--navy-2:#2D2F96;--navy-3:#17185A;--on-navy-2:#D3D4EE;--tint:#EEEFFA;--tint-2:#E0E1F5;--line:#D3D4EE;--sky:#D62828;--link:#B71C1C;--yellow:#FFE14D;--yellow-2:#FFEA80;--leaf:#3E9B3A;--leaf-ink:#225520;--leaf-tint:#E2F0E1;--ink:#22237A;--ink-2:#3B3D5C;--ok:#225520;--head:"Montserrat","Trebuchet MS",system-ui,sans-serif;--body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.hero{padding-bottom:28px}
+.sec.navy{background-image:url(media/circuit.svg);background-size:400px 400px}.fbcover img{width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(23,24,90,.18);margin-top:18px}
+</style>
+</head>
+<body>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8.2C10 6.6 7.4 6 4 6.2v11.6c3.4-.2 6 .4 8 2 2-1.6 4.6-2.2 8-2V6.2c-3.4-.2-6 .4-8 2z"/><path d="M12 8.2v11.6"/><path d="M8.2 4.6 9.3 2.6M15.8 4.6l-1.1-2M12 4.4V2"/></g></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3.5c-4.9 0-8.5 3.4-8.5 7.8 0 2.4 1.1 4.5 2.9 5.9V21l3.4-1.9c.7.2 1.4.3 2.2.3 4.9 0 8.5-3.4 8.5-7.8S16.9 3.5 12 3.5z"/><path fill="currentColor" d="m7 13.6 3-3.2 2.2 2 3-2.4-3 3.3-2.2-2z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3.5h3.5l1.6 4.2-2.2 1.4a11 11 0 0 0 5 5l1.4-2.2 4.2 1.6V17a3 3 0 0 1-3 3A15.5 15.5 0 0 1 2 6.5a3 3 0 0 1 3-3z"/></symbol>
+  <symbol id="i-form" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="17" rx="2.5"/><path d="M9 8.5h6M9 12h6M9 15.5h3.5"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.6 6.1 6.6.5-5 4.4 1.5 6.5L12 16.6 6.3 20l1.5-6.5-5-4.4 6.6-.5z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.6"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h13M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-post" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M7 15l3-3.5 2.5 2.5 2-2L18 15"/><circle cx="9" cy="8.5" r="1.4"/></g></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9h18"/><circle cx="6" cy="6.8" r=".6" fill="currentColor"/><circle cx="8.3" cy="6.8" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-sheet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M9 11h6M9 14.5h6M9 18h6M12 11v7"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.4-3 7.8-7 9-4-1.2-7-4.6-7-9V6l7-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></g></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="1"/><path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM14 18.5v2M18.5 14h2"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-5h4v5"/></g></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 4h2.5l2 11h10l2-8H7"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="16.5" cy="19" r="1.4"/></g></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M14.5 4.5a4.5 4.5 0 0 0-5.6 5.6L3.5 15.5l5 5 5.4-5.4a4.5 4.5 0 0 0 5.6-5.6l-2.8 2.8-2.9-.7-.7-2.9z"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3v3M12 3v3"/></g></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19l8-8"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M9 3.5h6v5.5h5.5v6H15v5.5H9V15H3.5V9H9z"/></symbol>
+</svg>
+
+<div id="intro" role="dialog" aria-modal="true" aria-label="Welcome">
+  <svg class="confetti" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="#D62828"><circle cx="40" cy="40" r="4"/><circle cx="350" cy="70" r="5"/><circle cx="300" cy="250" r="3"/><circle cx="90" cy="230" r="5"/></g><g fill="#FFE14D"><rect x="200" y="30" width="8" height="3" rx="1.5" transform="rotate(30 204 31)"/><rect x="60" y="130" width="9" height="3" rx="1.5" transform="rotate(-20 64 131)"/><rect x="340" y="180" width="9" height="3" rx="1.5" transform="rotate(50 344 181)"/></g><g fill="#FFFFFF" opacity=".7"><circle cx="150" cy="80" r="2"/><circle cx="260" cy="120" r="2"/><circle cx="120" cy="280" r="2"/></g></svg>
+  <button class="skip" type="button" data-begin>Skip</button>
+  <div>
+    <img class="crest" src="media/mark.webp" alt="A.I.T. Tarlac logo" width="112" height="112">
+    <div class="word">A.I.T.</div>
+    <div class="sub">TARLAC CITY</div>
+    <p class="greet"><span data-greeting>Good day</span>, <b>A.I.T. administration</b>.<br>Your website and online application proposal is ready.</p>
+    <p class="inote">This is a sample site made only for this proposal. It is temporary, and nothing you enter here is sent or collected.</p>
+    <div class="acts"><button class="btn btn-yellow" type="button" data-begin>Begin</button></div>
+  </div>
+</div>
+
+<div class="strip"><i></i>Sample site for proposal purposes only. Nothing you enter is sent or collected.</div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="A.I.T. Tarlac, back to the top"><img src="media/mark.webp" alt="" width="42" height="42"><span><b>A.I.T. Tarlac</b><small>Tarlac City</small></span></a>
+    <nav class="nav" aria-label="Sections">
+<a href="#admissions">Programs</a><a href="#apply">Apply</a><a href="#life">Campus life</a><a href="#news">Updates</a><a href="#visit">Visit</a><a class="prop" href="#proposal">Proposal</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menuPanel"><svg aria-hidden="true"><use href="#i-menu"/></svg>Menu</button>
+  </div>
+  <nav class="menu-panel" id="menuPanel" aria-label="Menu">
+<a href="#admissions">Programs and admissions</a><a href="#apply">Apply online</a><a href="#life">Campus life</a><a href="#news">Updates</a><a href="#visit">Visit us</a><a href="#proposal">The proposal</a><a href="#menu">Packages</a><a href="#quote">Quotation</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <svg class="stars" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="#D62828" opacity=".55"><circle cx="40" cy="60" r="4"/><circle cx="520" cy="40" r="5"/><circle cx="560" cy="300" r="3"/><circle cx="300" cy="370" r="4"/><circle cx="120" cy="330" r="3"/></g>
+    <g fill="#FFE14D" opacity=".5"><rect x="250" y="40" width="12" height="4" rx="2" transform="rotate(30 256 42)"/><rect x="80" y="180" width="12" height="4" rx="2" transform="rotate(-25 86 182)"/><rect x="470" y="200" width="12" height="4" rx="2" transform="rotate(55 476 202)"/><path d="M420 90l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/><path d="M170 100l2 5 5 .5-4 3.5 1 5-4-2.5-4 2.5 1-5-4-3.5 5-.5z"/></g>
+    <g fill="#FFFFFF" opacity=".35"><circle cx="200" cy="250" r="2"/><circle cx="380" cy="140" r="2"/><circle cx="560" cy="150" r="2"/><circle cx="20" cy="250" r="2"/></g>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+<span class="pill"><svg aria-hidden="true"><use href="#i-star"/></svg>A sample website for A.I.T. Tarlac City</span>      <h1>Free Senior High. <span>TESDA-registered courses.</span></h1>
+      <p class="hero-sub">Since 2006 on MacArthur Highway, San Sebastian, Tarlac City. ABM, GAS, HUMSS and Tech-Voc, plus Computer Systems Servicing, Electronics, Dressmaking and Welding.</p>
+      <div class="hero-acts">
+        <a class="btn btn-yellow" href="#apply" data-apply><svg aria-hidden="true"><use href="#i-form"/></svg>Apply online</a>
+<a class="btn btn-ghost" href="https://m.me/61558742956038" target="_blank" rel="noopener" data-msgr><svg aria-hidden="true"><use href="#i-msg"/></svg>Message us</a>      </div>
+<p class="hero-meta"><svg aria-hidden="true"><use href="#i-clock"/></svg>Senior High: no registration, tuition or miscellaneous fee, as advertised</p>    </div>
+    <div>
+      <div class="blob-wrap">
+        <div class="blob-back" aria-hidden="true"></div>
+        <div class="blob-ring" aria-hidden="true"></div>
+        <div class="blob"><img src="media/facade.webp" alt="The A.I.T. building on MacArthur Highway, with its TESDA program registrations and a DepEd Senior High now accepting banner" width="1000" height="678" fetchpriority="high"></div>
+<svg class="doodle star" aria-hidden="true"><use href="#i-star"/></svg>
+        <svg class="doodle pencil" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 50l4-14 26-26 10 10-26 26z"/><path d="M38 16l10 10M18 36l10 10"/><path d="M14 50l7-2"/></g></svg><div class="hero-chip"><i><svg aria-hidden="true"><use href="#i-star"/></svg></i><span><b>2006</b>Serving Tarlac City since 2006</span></div>      </div>
+<p class="credit">Photo of the A.I.T. building signage</p>    </div>
+  </div>
+</section><svg class="wave wave-bg-white" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#22237A" d="M0,0 L1440,0 L1440,50 C1200,100 980,30 720,56 C460,82 240,96 0,44 Z"/></svg>
+<section id="programs" class="sec pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Choose your path</h2><p class="lead">Senior High for Grade 10 completers, and TESDA courses for anyone ready to learn a skill.</p></div>
+    <div class="cards c4">
+<a class="card reveal" href="#shs"><img class="ph" src="media/seminar.webp" alt="A.I.T. students at a seminar in the school hall" width="1000" height="550" loading="lazy" decoding="async"><div class="cb"><span class="badge"><i></i>DepEd permit</span><h3>Senior High School</h3><p>Grades 11 and 12: ABM, GAS, HUMSS and Tech-Voc. No tuition, as advertised.</p><span class="more">See strands</span></div></a>
+<a class="card reveal" href="#tesda"><img class="ph" src="media/crimping.webp" alt="A trainee crimping network cables in the computer lab" width="640" height="853" loading="lazy" decoding="async"><div class="cb"><span class="badge"><i></i>TESDA-registered</span><h3>TESDA courses</h3><p>Computer Systems Servicing, Electronics, Dressmaking and Welding, NC I and NC II.</p><span class="more">See courses</span></div></a>
+<a class="card reveal" href="#life"><img class="ph" src="media/seniors.webp" alt="Grade 12 students in formal wear on stage at Seniors&#x27; Night 2026" width="1000" height="706" loading="lazy" decoding="async"><div class="cb"><h3>Campus life</h3><p>Seniors&#39; Night, commencement and hands-on training.</p><span class="more">See events</span></div></a>
+<a class="card reveal" href="#apply"><img class="ph" src="media/trainer.webp" alt="Trainees working on computers with their instructor" width="640" height="853" loading="lazy" decoding="async"><div class="cb"><h3>Apply online</h3><p>Pick a strand or course and get a reference number in two minutes.</p><span class="more">Apply now</span></div></a>
+    </div>
+<div class="facts reveal"><div><b>2006</b><span>Founded in Tarlac City</span></div><div><b>₱0</b><span>Senior High tuition, as advertised</span></div><div><b>5</b><span>TESDA-registered qualifications</span></div><div><b>9th</b><span>Commencement Exercises, May 2025</span></div></div>  </div>
+</section><svg class="wave wave-bg-tint" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,0 L1440,0 L1440,40 C1160,92 900,24 640,54 C380,84 200,90 0,48 Z"/></svg>
+<section id="admissions" class="sec tint pt-m">
+  <div class="wrap">
+<div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Programs and admissions</h2><p class="lead">What we offer and how to start.</p></div>    <div class="reqs">
+<div class="req reveal" id="shs"><h3><svg aria-hidden="true"><use href="#i-tool"/></svg>Senior High: Academic track</h3><ul><li>ABM: Accountancy, Business and Management</li><li>GAS: General Academic Strand</li><li>HUMSS: Humanities and Social Sciences</li><li>DepEd SHS Permits No. 789 s. 2016 and No. 113 s. 2017</li></ul></div>
+<div class="req reveal" id="techvoc"><h3><svg aria-hidden="true"><use href="#i-tool"/></svg>Senior High: Tech-Voc track</h3><p>Tech-Voc specializations appear here once the school confirms them. Like the Academic track: no registration, tuition or miscellaneous fee, as advertised.</p></div>
+<div class="req reveal" id="tesda"><h3><svg aria-hidden="true"><use href="#i-tool"/></svg>TESDA courses</h3><ul><li>Computer Systems Servicing NC II, 280 hours</li><li>Electronic Products Assembly and Servicing NC II, 260 hours</li><li>Dressmaking NC II, 275 hours</li><li>Shielded Metal Arc Welding (SMAW) NC I and NC II, 268 hours each</li><li>Each course also runs as a Mobile Training Program</li></ul></div>
+<div class="req reveal" id="reqs"><h3><svg aria-hidden="true"><use href="#i-tool"/></svg>What to prepare</h3><p>Requirements for Senior High and for each TESDA course appear here as the registrar provides them. For now, please message the school.</p></div>
+    </div>
+<p class="lead reveal mt-20">Free Senior High as advertised by A.I.T. Fees, scholarships and schedules for S.Y. 2027-2028 are confirmed by the school.</p><h3 class="reveal mt-44">How to apply</h3>
+    <ol class="steps4"><li class="reveal"><b>Apply online</b><span>Choose a Senior High strand or a TESDA course and get a reference number.</span></li><li class="reveal"><b>Prepare the requirements</b><span>The registrar sends the list by Messenger or text.</span></li><li class="reveal"><b>Visit the office</b><span>Liatsan Family Bldg., MacArthur Highway, San Sebastian, Tarlac City.</span></li><li class="reveal"><b>Start your classes</b><span>Begin Senior High or your TESDA training.</span></li></ol>  </div>
+</section><svg class="wave wave-bg-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#EEEFFA" d="M0,0 L1440,0 L1440,52 C1220,96 1000,18 740,48 C480,80 230,92 0,42 Z"/></svg>
+<section class="navy" id="apply">
+  <div class="wrap portal">
+    <div class="reveal">
+      <span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span>
+      <h2>Apply online. Get a reply on Messenger.</h2>
+      <p class="lead">Students and trainees apply from any phone. Each application lands in the school&#39;s Google Sheet, and the registrar replies with a ready Messenger message.</p>
+      <div class="vseg" role="tablist" aria-label="Demo view">
+        <button type="button" role="tab" aria-selected="true" data-fl-view="form">Apply</button>
+        <button type="button" role="tab" aria-selected="false" data-fl-view="staff">Registrar</button>
+      </div>
+      <p class="vdesc" id="vdesc"></p>
+      <p class="p-note">Sample data only. Nothing you type is sent anywhere.</p>
+    </div>
+    <div class="lap">
+      <div class="chrome"><i></i><i></i><i></i><div class="url"><span id="appUrl">aittarlac.com</span></div></div>
+      <div class="app">
+        <div class="app-head"><img src="media/mark.webp" alt="" width="40" height="40" loading="lazy"><div><b>A.I.T. Online Application</b><small id="appSub"></small></div><span class="sd">Sample data</span></div>
+        <div class="ppane" id="pv-form" role="tabpanel" aria-label="Apply"></div>
+        <div class="ppane" id="pv-staff" role="tabpanel" aria-label="Registrar" hidden></div>
+      </div>
+    </div>
+  </div>
+</section><svg class="wave wave-bg-white" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#22237A" d="M0,0 L1440,0 L1440,44 C1180,96 940,20 700,52 C430,88 220,84 0,40 Z"/></svg>
+<section id="life" class="sec pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Campus life and training</h2><p class="lead">Celebrations, classes and hands-on training at A.I.T.</p></div>
+<div class="mu">
+      <div class="reveal">
+<div class="big">9th</div>        <h3>Commencement and Seniors&#39; Night</h3>
+        <p class="lead">The 9th Commencement Exercises on 26 May 2025 at Bulwagan ng Tarlac, and Seniors&#39; Night &#34;Starlight Spotlight&#34; on 27 March 2026.</p>
+      </div>
+      <div class="mu-photos reveal"><img src="media/seniors.webp" alt="Grade 12 students on stage at Seniors&#x27; Night 2026" width="1000" height="706" loading="lazy" decoding="async"><img src="media/seminar.webp" alt="A.I.T. students gathered for a seminar in the school hall" width="1000" height="550" loading="lazy" decoding="async"></div>
+    </div>    <div class="cards c3">
+<article class="card event reveal"><img class="ph" src="media/batch.webp" alt="A Computer Systems Servicing class with their trainer" width="1000" height="752" loading="lazy" decoding="async"><div class="cb"><span class="when">TESDA training</span><h3>Computer Systems Servicing</h3><p>A CSS NC II batch with their trainer.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+<article class="card event reveal"><img class="ph" src="media/crimping.webp" alt="A trainee crimping network cables" width="640" height="853" loading="lazy" decoding="async"><div class="cb"><span class="when">Hands-on</span><h3>Learning by doing</h3><p>Trainees practice cable crimping in the computer lab.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+<article class="card event reveal"><img class="ph" src="media/lab.webp" alt="A trainee working at a networking rack in the computer lab" width="640" height="853" loading="lazy" decoding="async"><div class="cb"><span class="when">Computer lab</span><h3>Our computer lab</h3><p>Computers and a networking rack for CSS practice.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+<article class="card event reveal"><img class="ph" src="media/trainer.webp" alt="Trainees at computers with their instructor" width="640" height="853" loading="lazy" decoding="async"><div class="cb"><span class="when">TESDA training</span><h3>With our trainers</h3><p>Trainers guide each trainee at the workstation.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+<article class="card event reveal"><img class="ph" src="media/facade.webp" alt="The A.I.T. building on MacArthur Highway" width="1000" height="678" loading="lazy" decoding="async"><div class="cb"><span class="when">Campus</span><h3>Our building</h3><p>Liatsan Family Bldg., MacArthur Highway, San Sebastian.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+<article class="card event reveal"><div class="ph-empty ph" role="img" aria-label="Welding shop photo">Photo appears here</div><div class="cb"><span class="when">Coming soon</span><h3>Welding and dressmaking</h3><p>Photos of the welding shop and the dressmaking room appear here.</p><button type="button" class="btn btn-soft btn-sm album-btn" data-album>See the album</button></div></article>
+    </div>
+<p class="lead reveal small-note">Photos from A.I.T.&#39;s Facebook pages, shown in the school colors.</p><div class="msg-card reveal">
+      <img src="media/mark.webp" alt="A.I.T. Tarlac logo" width="180" height="180" loading="lazy" decoding="async">
+      <div>
+        <small>A message from the School Administrator</small>
+        <h3>Welcome to A.I.T.</h3>
+        <p class="role">School Administrator, A.I.T. Advanced Institute Technology of Tarlac City, Inc.</p>
+        <blockquote>The School Administrator&#39;s welcome to students and trainees appears here, in their own words, with their photo.</blockquote>
+      </div>
+    </div>  </div>
+</section><svg class="wave wave-bg-tint" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,0 L1440,0 L1440,50 C1200,100 980,30 720,56 C460,82 240,96 0,44 Z"/></svg>
+<section id="news" class="sec tint pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Announcements</h2><p class="lead">Enrollment, schedules and activities from the school office.</p></div>
+    <div class="news" id="newsList" aria-live="polite"></div>
+    <p class="news-how reveal"><svg aria-hidden="true"><use href="#i-sheet"/></svg><span id="newsHow">How it works: the office types each update into a Google Sheet (date, title, text). It shows here within a few minutes, with no website login needed.</span></p>
+  </div>
+</section><section id="facebook" class="sec tint pt-s">
+  <div class="wrap">
+    <div class="reveal center"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Fresh from our Facebook page</h2><p class="lead">Our newest posts, photos and events.</p></div>
+    <div class="fbgrid" id="fbGrid">
+      <div class="fb-embed" id="fbEmbed">
+        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61558742956038" data-tabs="timeline" data-width="500" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-lazy="true"><blockquote cite="https://www.facebook.com/profile.php?id=61558742956038" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61558742956038">A.I.T. Tarlac City on Facebook</a></blockquote></div>
+        <p class="fb-wait">Loading our Facebook posts…</p>
+      </div>
+      <div class="fb-card reveal">
+        <img src="media/mark.webp" alt="" width="96" height="96" loading="lazy">
+        <h3>See our latest posts</h3>
+        <p>Announcements, events and photos from A.I.T.&#39;s official page, followed by 1.1K people on Facebook.</p>
+        <a class="btn btn-yellow" href="https://www.facebook.com/profile.php?id=61558742956038" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-post"/></svg>Open our Facebook page</a>
+<p class="sm">Questions? <a href="https://m.me/61558742956038" target="_blank" rel="noopener">Message us on Messenger</a></p>      </div>
+    </div>
+  </div>
+</section><svg class="wave wave-bg-white" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#EEEFFA" d="M0,0 L1440,0 L1440,52 C1220,96 1000,18 740,48 C480,80 230,92 0,42 Z"/></svg>
+<section id="visit" class="sec pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Visit us</h2><p class="lead">On MacArthur Highway, San Sebastian, Tarlac City.</p></div>
+    <div class="visit">
+      <ul class="info reveal">
+        <li id="address"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>Address</b>Liatsan Family Bldg., MacArthur Highway, San Sebastian, Tarlac City 2300</div></li>
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><b>Phone</b><a href="tel:+639350224602">0935 022 4602</a></div></li>
+<li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><b>Email</b><a href="mailto:ait_tvi@outlook.com">ait_tvi@outlook.com</a></div></li>        <li id="hours"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Office hours</b>Office hours appear here once the school confirms them.</div></li>
+<li><svg aria-hidden="true"><use href="#i-msg"/></svg><div><b>Messenger</b><a href="https://m.me/61558742956038" target="_blank" rel="noopener">Message A.I.T. Tarlac City</a></div></li>      </ul>
+      <div class="mapcard reveal">
+        <div class="map-art"><svg aria-hidden="true"><use href="#i-pin"/></svg><span>A.I.T., Liatsan Family Bldg.</span><span class="map-sub">A live Google Map appears here on the final site.</span></div>
+<a class="btn btn-navy" href="https://maps.google.com/?cid=9272756865279744037" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Open in Google Maps</a>      </div>
+    </div>
+<div class="ask-card reveal">
+      <p><b>Have a question at night?</b>Ask A.I.T. answers questions about Senior High, TESDA courses and applying, using only what the school approves. A sample of an add-on.</p>
+      <button class="btn btn-navy" type="button" id="mkChat" data-chat-open><svg aria-hidden="true"><use href="#i-msg"/></svg>Ask A.I.T. <small id="mkChatTag" class="tagsm"></small></button>
+    </div><p class="lead small-note">A.I.T. Advanced Institute Technology of Tarlac City, Inc. · Since 2006 · DepEd SHS Permits No. 789 s. 2016 and No. 113 s. 2017 · TESDA-registered programs</p>  </div>
+</section><svg class="wave wave-bg-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,0 L1440,0 L1440,44 C1180,96 940,20 700,52 C430,88 220,84 0,40 Z"/></svg>
+<section class="navy prop-head" id="proposal">
+  <div class="wrap">
+    <span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span>
+    <h2>For the A.I.T. administration: one official home online</h2>
+    <p class="lead">Prepared for the School Administrator and representatives of A.I.T. Everything above is a working sample of your future website, made from your own posts, permits and photos.</p>
+    <div class="prop-meta"><div><b data-qno></b>Quotation</div><div><b data-valid></b>Valid until</div><div><b>aittarlac.com</b>Your web address</div></div>
+  </div>
+</section><svg class="wave wave-bg-tint" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#22237A" d="M0,0 L1440,0 L1440,50 C1200,100 980,30 720,56 C460,82 240,96 0,44 Z"/></svg>
+<section id="fit" class="sec tint pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Eight numbers, four pages, one school</h2><p class="lead">A student who searches for A.I.T. today finds eight phone numbers, four Facebook pages and a Google Maps pin with no website. The website gives them one official answer, and your Facebook stays exactly as it is.</p></div>
+    <ol class="fit"><li class="reveal"><p class="was">Today, eight different phone numbers are listed across directories and pages.</p><p class="now">One official number and email on the website, on Google and on Facebook.</p></li><li class="reveal"><p class="was">Today, there are four Facebook pages, and the old one, with 676 followers, has not posted since January 2021.</p><p class="now">Every page points students to the official page and to aittarlac.com.</p></li><li class="reveal"><p class="was">Today, Google Maps shows no website and no hours, and lists A.I.T. as a primary school.</p><p class="now">A corrected Google listing: the right category, office hours and a link to aittarlac.com.</p></li><li class="reveal"><p class="was">Today, free Senior High and the TESDA courses live on one banner and scattered posts.</p><p class="now">A page for Senior High and every TESDA course, with an online application.</p></li></ol>
+  </div>
+</section><section id="fbstays" class="sec tint pt-s">
+  <div class="wrap">
+    <div class="reveal center"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Your Facebook stays. It just works harder.</h2><p class="lead">Keep posting the way you do today. Nothing changes for your page admins.</p></div>
+    <ol class="flow"><li class="reveal"><span class="ic"><svg aria-hidden="true"><use href="#i-post"/></svg></span><b>You post on Facebook</b><span>Enrollment, events and photos, the same as always.</span><span class="arrow-d" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></li><li class="reveal"><span class="ic"><svg aria-hidden="true"><use href="#i-web"/></svg></span><b>It appears on your website automatically</b><span>Your newest posts show on aittarlac.com, with no extra work.</span><span class="arrow-d" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></li><li class="reveal"><span class="ic"><svg aria-hidden="true"><use href="#i-form"/></svg></span><b>Students apply instead of waiting</b><span>Anyone ready to enroll applies in two minutes, and the registrar gets each one in a Google Sheet.</span></li></ol>
+  </div>
+</section><svg class="wave wave-bg-white" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#EEEFFA" d="M0,0 L1440,0 L1440,52 C1220,96 1000,18 740,48 C480,80 230,92 0,42 Z"/></svg>
+<section id="replies" class="sec pt-m">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Ready-made Messenger replies</h2><p class="lead">Your page admins copy a reply and paste it in Messenger. Each one links to the right part of the website. Sample replies, ready to edit.</p></div>
+    <div class="replies">
+<div class="reply reveal"><div class="reply-top"><b>Free Senior High</b><span class="badge sample"><i></i>Sample</span></div>
+        <p class="bubble" id="rp-1">Hello po! Yes, walang registration, tuition at miscellaneous fee ang Senior High namin (as advertised). Strands: ABM, GAS, HUMSS at Tech-Voc. Details at online application po dito: https://aittarlac.com/#shs</p>
+        <div class="reply-acts"><button type="button" class="btn btn-navy btn-sm" data-copy-reply="rp-1">Copy reply</button><a href="#shs">See the section</a><span class="copy-hint" role="status"></span></div></div>
+<div class="reply reveal"><div class="reply-top"><b>Welding course</b><span class="badge sample"><i></i>Sample</span></div>
+        <p class="bubble" id="rp-2">Hi po! Meron kaming SMAW NC I at NC II (268 hours), may Mobile Training Program din. Details po dito: https://aittarlac.com/#tesda</p>
+        <div class="reply-acts"><button type="button" class="btn btn-navy btn-sm" data-copy-reply="rp-2">Copy reply</button><a href="#tesda">See the section</a><span class="copy-hint" role="status"></span></div></div>
+<div class="reply reveal"><div class="reply-top"><b>Requirements</b><span class="badge sample"><i></i>Sample</span></div>
+        <p class="bubble" id="rp-3">Hello po! Nasa website po ang requirements para sa Senior High at bawat TESDA course, at pwede na rin mag-apply online: https://aittarlac.com/#admissions</p>
+        <div class="reply-acts"><button type="button" class="btn btn-navy btn-sm" data-copy-reply="rp-3">Copy reply</button><a href="#admissions">See the section</a><span class="copy-hint" role="status"></span></div></div>
+<div class="reply reveal"><div class="reply-top"><b>Location</b><span class="badge sample"><i></i>Sample</span></div>
+        <p class="bubble" id="rp-4">Nasa Liatsan Family Bldg., MacArthur Hwy, San Sebastian, Tarlac City po kami. Map at contact details po dito: https://aittarlac.com/#visit</p>
+        <div class="reply-acts"><button type="button" class="btn btn-navy btn-sm" data-copy-reply="rp-4">Copy reply</button><a href="#visit">See the section</a><span class="copy-hint" role="status"></span></div></div>
+    </div>
+  </div>
+</section><section id="bonuses" class="sec pt-0">
+  <div class="wrap">
+    <div class="bonus reveal">
+      <div class="bonus-head"><div class="zero"><span class="cur">₱</span>0<small>Included</small></div><div><h2 class="h2-sm">Free bonuses</h2><p class="lead mt-4">Included in every package, at no cost.</p></div></div>
+      <div class="bonus-list">
+<div class="bitem">
+          <h3>Messenger button</h3>
+          <p>A button on every page that opens a chat with your Facebook page. Try it:</p>
+          <a class="msgr" href="https://m.me/61558742956038" target="_blank" rel="noopener" data-msgr><i><svg aria-hidden="true"><use href="#i-msg"/></svg></i>Message A.I.T.</a>
+        </div>        <div class="bitem">
+          <h3>Facebook link previews</h3>
+          <p>When anyone shares aittarlac.com, Facebook shows your photo, name and a short description, like this:</p>
+          <figure class="fbpost" aria-label="Sample of a shared link on Facebook">
+            <div class="fbpost-h"><img src="media/mark.webp" alt="" width="38" height="38" loading="lazy"><div><b>A.I.T. Tarlac City</b><span>Sample post</span></div></div>
+            <p>Free Senior High and TESDA courses at A.I.T. Apply online on our new website! (sample text)</p>
+            <div class="lc"><img src="media/og-image.jpg" alt="The A.I.T. seal on a navy circuit background with the words Free Senior High and TESDA Courses" width="1200" height="630" loading="lazy" decoding="async"><div><small>aittarlac.com</small><b data-og-title></b><span data-og-desc></span></div></div>
+          </figure>
+        </div>
+<div class="bitem">
+          <h3>QR poster</h3>
+          <p>A printable A4 poster with a QR code that opens aittarlac.com. Post it at the entrance, the office and the guard house.</p>
+          <div class="poster-prev" id="posterPrev" role="img" aria-label="Preview of the A4 QR poster"></div>
+          <button class="btn btn-navy" type="button" id="btnPoster"><svg aria-hidden="true"><use href="#i-qr"/></svg>Print the poster</button>
+          <p class="fs15">The QR code opens aittarlac.com, so it works once the website is live.</p>
+        </div>      </div>
+    </div>
+  </div>
+</section><section id="fbcover" class="sec pt-0">
+<div class="wrap">
+  <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h2>Bonus: a fresh Facebook cover</h2><p class="lead">Ready for the official page, in the school colors, with the website address. Included free in every package.</p></div>
+  <figure class="fbcover reveal"><img src="media/fb-cover.webp" alt="Sample Facebook cover for A.I.T.: the seal with the words Free Senior High and TESDA-certified skills on a navy circuit background" width="1200" height="457" loading="lazy"></figure>
+</div>
+
+</section><section id="work" class="sec pt-s">
+  <div class="wrap">
+    <div class="reveal"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Websites we have served</h2><p class="lead">These are live. Tap a screen to explore it, or open the full website.</p></div>
+    <div class="tabs" role="tablist" aria-label="Our websites" id="tabs"></div>
+    <div class="car">
+      <div class="car-frame">
+        <div class="chrome"><i></i><i></i><i></i><div class="url" id="carUrl"></div></div>
+        <div class="view" id="view"><div class="loading" id="loading">Loading the website…</div></div>
+      </div>
+    </div>
+    <div class="arrows"><button class="arrow" type="button" aria-label="Previous website" data-step="-1"><svg aria-hidden="true"><use href="#i-left"/></svg></button><button class="arrow" type="button" aria-label="Next website" data-step="1"><svg aria-hidden="true"><use href="#i-right"/></svg></button></div>
+    <div class="car-info">
+      <div>
+        <span class="counter" id="carCount"></span>
+        <h3 id="carName">Mountain View Christian School</h3>
+        <p class="kind" id="carKind"></p>
+        <a class="btn btn-navy" id="carVisit" href="#" target="_blank" rel="noopener">Visit the full website</a>
+      </div>
+      <div>
+        <p class="add-label">Like something here? Add it to A.I.T.'s website.</p>
+        <div class="adds" id="carAdds"></div>
+      </div>
+    </div>
+  </div>
+</section><svg class="wave wave-bg-tint" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,0 L1440,0 L1440,52 C1220,96 1000,18 740,48 C480,80 230,92 0,42 Z"/></svg>
+<section id="menu" class="sec tint pt-m">
+  <div class="wrap">
+    <div class="reveal center"><span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span><h2>Choose your package</h2><p class="lead">Three packages, each priced below its items ordered one by one. Every package includes aittarlac.com and the free bonuses.</p></div>
+    <div class="menu" id="courses"></div>
+    <div class="domain reveal">
+      <p class="lab">Your web address</p>
+      <div class="host"><svg aria-hidden="true"><use href="#i-globe"/></svg>aittarlac.com</div>
+      <p>Included in every package: registered for A.I.T., connected to your website, and secured with https. Your office keeps using its email.</p>
+    </div>
+    <div class="alacarte">
+      <p>Prefer to pick item by item?</p>
+      <button class="btn btn-line" type="button" data-open-drawer>Add or remove items</button>
+    </div>
+  </div>
+</section><svg class="wave wave-bg-white" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#EEEFFA" d="M0,0 L1440,0 L1440,44 C1180,96 940,20 700,52 C430,88 220,84 0,40 Z"/></svg>
+<section id="quote" class="sec pt-m">
+  <div class="wrap">
+    <span class="mark"><svg aria-hidden="true"><use href="#i-tool"/></svg></span>
+    <h2>Your quotation</h2>
+    <div class="quote">
+      <div class="ticket-col">
+        <div class="rail-bar"></div>
+        <div class="ticket" id="ticket">
+          <div class="t-head"><b>A.I.T. Tarlac</b><span>Website and online application order</span></div>
+          <ul class="t-lines" id="tLines" aria-live="polite"></ul>
+          <div class="t-sum">
+            <div class="t-row save" id="tSaveRow"><span>Package saving</span><span id="tSave"></span></div>
+            <div class="t-total"><span>Total</span><strong id="tTotal"></strong></div>
+            <div class="t-row" id="tMonthRow"><span>Optional maintenance</span><span id="tMonth"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="q-side">
+        <div class="big" id="qBig"></div>
+        <p class="big-sub" id="qSub"></p>
+<div class="warranty"><svg aria-hidden="true"><use href="#i-shield"/></svg><div><b>12 months of free repairs</b><span>If anything on the website breaks or stops working in the first year, it is fixed at no cost. Monthly maintenance is optional, only if you want your updates handled for you.</span></div></div>
+<div class="warranty"><svg aria-hidden="true"><use href="#i-lock"/></svg><div><b>Student records stay with the school</b><span>Applications and student details stay in A.I.T.&#39;s own Google Sheets and Drive. The website only sends them there.</span></div></div>
+        <div class="upsell" id="upsell" hidden></div>
+        <div class="q-acts"><button class="btn btn-navy" type="button" id="btnPrint">Save the quotation as PDF</button></div>
+        <p class="reach" id="reach"></p>
+      </div>
+    </div>
+    <ol class="steps"><li><b>Approve</b><span>Sign the quotation and pay the down payment.</span></li><li><b>Design</b><span>We finish the design with your photos, programs and official contact details.</span></li><li><b>Build</b><span>You review a private preview of the website and application on phone and computer.</span></li><li><b>Launch</b><span>aittarlac.com goes live, the Google listing is corrected, and the warranty starts.</span></li></ol>
+    <p class="terms-link"><button type="button" id="termsBtn" aria-expanded="false" aria-controls="terms">Read the full terms</button></p>
+    <div class="terms" id="terms"><ul><li>Prices are valid until <span data-valid></span>.</li><li>Two rounds of revisions per page are included.</li><li>Includes registration of aittarlac.com, connected to the website. Renewal after the registration period is billed at cost.</li><li>Secure hosting with https is included. All website files are handed over to A.I.T. after full payment.</li><li>Free bonuses in every package: the Messenger button, Facebook link previews, the printable QR poster and a new Facebook cover.</li><li>Applications and student details stay in A.I.T.&#39;s own Google Sheets, Forms and Drive. The school keeps ownership of all student records. A privacy notice and consent under the Data Privacy Act of 2012 (RA 10173) are built in.</li><li>Photos of students are shown only with the school&#39;s approval and the students&#39; or parents&#39; consent. Until launch, the website stays hidden from search engines.</li><li>Not included: paid ads, professional photo or video shoots, and paid plans of outside tools if usage outgrows their free tier.</li><li>We need from the school: the official phone number and email, office hours, requirements, photos, and access to the Google listing and Facebook pages.</li><li>The scope is the items listed in this quotation. New features requested after approval are quoted separately.</li></ul></div>
+  </div>
+</section><svg class="wave wave-bg-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,0 L1440,0 L1440,50 C1200,100 980,30 720,56 C460,82 240,96 0,44 Z"/></svg>
+<section class="navy signoff">
+  <div class="wrap">
+    <img class="crest-sm" src="media/mark.webp" alt="" width="84" height="84" loading="lazy">
+    <h2>Thank you, A.I.T.</h2>
+    <div class="names">
+      <div id="devCol"><p>Prepared by</p><strong data-devname></strong><p data-devcontact></p></div>
+      <div><p>For approval of</p><strong>School Administrator</strong><p>or authorized representative, A.I.T. Advanced Institute Technology of Tarlac City, Inc.</p></div>
+    </div>
+    <p class="fine">This is a temporary sample site for proposal purposes only. Nothing entered here is sent or collected. Photos and the seal belong to A.I.T. Advanced Institute Technology of Tarlac City, Inc.</p>
+    <button class="again" type="button" id="replay">Watch the opening again</button>
+  </div>
+</section></main>
+
+<nav class="bbar" aria-label="Quick actions">
+<a href="https://m.me/61558742956038" target="_blank" rel="noopener" data-msgr><svg aria-hidden="true"><use href="#i-msg"/></svg>Message</a>  <a href="tel:+639350224602"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="go" href="#apply" data-apply><svg aria-hidden="true"><use href="#i-form"/></svg>Apply</a>
+</nav>
+
+<div class="pill" id="pill">
+  <div><small id="pillLabel"></small><strong id="pillTotal"></strong></div>
+  <a class="btn btn-yellow btn-sm" href="#quote">View quotation</a>
+</div>
+
+<div class="drawer" id="drawer">
+  <div class="scrim" data-close-drawer></div>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="sheet-head">
+      <div><h3 id="drawerTitle">Pick item by item</h3><p>Tick or untick any item. Your package saving is kept wherever it applies.</p></div>
+      <button class="x" type="button" data-close-drawer aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="sheet-body" id="drawerBody"></div>
+    <div class="sheet-foot"><div><small id="dLabel"></small><strong id="dTotal"></strong></div><button class="btn btn-navy" type="button" data-close-drawer>Done</button></div>
+  </div>
+</div>
+
+<div class="cpanel" id="cpanel" role="dialog" aria-label="Ask A.I.T., sample assistant">
+  <div class="cp-head"><img src="media/mark.webp" alt="" width="40" height="40"><div><b>Ask A.I.T.</b><small>Website assistant (sample)</small></div><button class="x" type="button" data-chat-close aria-label="Close the assistant"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <div class="cp-add" id="cpAdd"><span>This assistant is an add-on.</span><button type="button" data-add="ai">Add it to the quotation</button></div>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form class="ask" id="askForm" autocomplete="off">
+    <input id="askInput" type="text" placeholder="Ask about Senior High or TESDA courses" aria-label="Your question">
+    <button class="btn btn-navy" type="submit">Send</button>
+  </form>
+</div>
+<div class="fmodal" id="fmodal">
+  <div class="scrim" data-fm-close></div>
+  <div class="fm-sheet" role="dialog" aria-modal="true" aria-labelledby="fmTitle">
+    <div class="fm-bar"><b id="fmTitle">Form</b><button class="x" type="button" data-fm-close aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="fm-body" id="fmBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div id="printArea"></div>
+<div id="posterArea">
+  <div class="poster" id="poster">
+    <div class="top-band"><svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFFFF" d="M0,58 C220,104 420,8 720,38 C1010,68 1210,104 1440,46 L1440,100 L0,100 Z"/></svg></div>
+    <img class="pc" src="media/mark.webp" alt="A.I.T. Tarlac logo">
+    <h1>A.I.T. Tarlac</h1>
+    <p class="ps">Free Senior High. TESDA-registered courses.</p>
+    <img class="qr" src="media/qr-ait.png" alt="QR code that opens aittarlac.com">
+    <p class="scan">Scan to visit our website</p>
+    <p class="url">aittarlac.com</p>
+    <div class="row"><span>Apply online</span><span>Free Senior High</span><span>TESDA NC I and II</span></div>
+    <p class="addr">Liatsan Family Bldg., MacArthur Hwy, San Sebastian, Tarlac City · 0935 022 4602</p>
+  </div>
+</div>
+<script>
+window.SITE={"config": {"lsKey": "ait-proposal-v1", "issued": "2026-10-30", "validDays": 30, "downPct": 50, "warrantyMonths": 12, "defaultTier": "signature", "domain": "aittarlac.com", "domainNote": "included", "quoteNo": "AIT-WEB-2026-1030", "developer": "", "role": "Web Developer", "email": "", "phone": "", "clientName": "", "clientRole": "School Administrator or authorized representative", "org": "A.I.T. Advanced Institute Technology of Tarlac City, Inc.", "orgShort": "A.I.T. Tarlac", "orgEmail": "ait_tvi@outlook.com", "orgPhone": "0935 022 4602", "orgAddress": "Liatsan Family Bldg., MacArthur Highway, San Sebastian, Tarlac City 2300", "messenger": "https://m.me/61558742956038", "logo": "media/mark.webp", "recommendLabel": "Recommended for A.I.T.", "chatFallback": "I don't have that information yet. The real assistant learns only from what A.I.T. approves. For now, ask me about Senior High, TESDA courses or how to apply.", "chatHello": "Hello! I'm the Ask A.I.T. assistant, a sample of what the school's website can include. Ask me about Senior High, TESDA courses or applying.", "albumToast": "Sample only: on the real site this opens the photo album", "reachGeneric": "Questions, or ready to proceed? Reply to the message that came with this link, and a walkthrough can be set at your convenience.", "ogTitle": "A.I.T. Advanced Institute Technology of Tarlac City", "ogDesc": "Free Senior High (ABM, GAS, HUMSS, Tech-Voc) and TESDA-registered courses on MacArthur Highway, Tarlac City, since 2006. Apply online or message us.", "applyId": "apply", "announcementsCsv": "", "print": {"title": "Website and Online Application Quotation", "project": "Website and online application for A.I.T. on aittarlac.com: responsive design, secure hosting, Google listing and contact cleanup, 12 months of free repairs", "terms": ["New content and changes after launch are covered only if optional maintenance is chosen.", "Includes registration of aittarlac.com, connected to the website. Renewal after the registration period is billed at cost.", "Applications and student details stay in the school's own Google Sheets, Forms and Drive. A.I.T. keeps ownership of all student records. A privacy notice and consent under RA 10173 are built in.", "Photos of students are shown only with the school's approval and the students' or parents' consent.", "Not included: paid ads, professional photo or video shoots, and paid plans of outside tools. These are paid at cost.", "The school provides the official contact details, photos, requirements and page details. New features requested after approval are quoted separately.", "All website files are handed over to A.I.T. upon full payment."]}}, "pricing": {"groups": [["pages", "Pages", ""], ["engage", "Reach and contact cleanup", ""], ["system", "Online application", "Works with Google Sheets and Messenger"], ["ai", "AI assistant", ""], ["support", "Support", ""]], "features": [{"id": "base", "group": "base", "price": 7990, "unit": "once", "days": 10, "short": "Website with aittarlac.com", "name": "Website with aittarlac.com", "desc": "Home, About, Admissions and Contact pages. Phone-ready, secure hosting, Google search setup, and the aittarlac.com address registered and connected.", "locked": true}, {"id": "shs", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Senior High page", "name": "Senior High page", "desc": "ABM, GAS, HUMSS and Tech-Voc, the DepEd permits, the free-tuition ribbon and an apply button."}, {"id": "tesda", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "TESDA course pages", "name": "A page for each TESDA course", "desc": "CSS, EPAS, Dressmaking and SMAW: level, hours, Mobile Training Program and an apply button."}, {"id": "gallery", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Campus life and gallery", "name": "Campus life and gallery", "desc": "Commencement, Seniors' Night and training photos, each with its own album."}, {"id": "news", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Announcements", "name": "Announcements", "desc": "Enrollment updates, schedules and activities, typed into a Google Sheet by your staff."}, {"id": "faq", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Frequently asked questions", "name": "Frequently asked questions", "desc": "Free Senior High, requirements, schedules, scholarships and office hours.", "upsell": "an FAQ page"}, {"id": "message", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Administrator's message", "name": "Message from the School Administrator", "desc": "A personal welcome to students and trainees, with a photo and their own words."}, {"id": "downloads", "group": "pages", "price": 1500, "unit": "once", "days": 1, "short": "Downloads center", "name": "Downloads center", "desc": "Requirements lists and forms to download.", "upsell": "a downloads center"}, {"id": "maps", "group": "engage", "price": 1500, "unit": "once", "days": 1, "short": "Google listing and contact cleanup", "name": "Google listing and contact cleanup", "desc": "One official number and email everywhere. The Google listing gets the right category, hours and the website link, and the old Facebook pages point to the official one."}, {"id": "fb", "group": "engage", "price": 1500, "unit": "once", "days": 1, "short": "Facebook feed on the website", "name": "Facebook feed on the website", "desc": "Your newest Facebook posts appear on the website automatically."}, {"id": "inquiry", "group": "engage", "price": 1500, "unit": "once", "days": 1, "short": "Inquiry form", "name": "Inquiry form", "desc": "Questions are saved to a Google Sheet and emailed to the school office."}, {"id": "apply", "group": "system", "price": 3000, "unit": "once", "days": 2, "short": "Online application", "name": "Online application for Senior High and TESDA", "desc": "Students and trainees choose a strand or course and get a reference number. Saved to the school's Google Sheet, with the office notified by email."}, {"id": "staffview", "group": "system", "price": 2500, "unit": "once", "days": 2, "short": "Registrar list with Messenger replies", "name": "Registrar list with ready Messenger replies", "desc": "The registrar sees every application, marks its status, and copies a ready Messenger reply.", "needs": "apply"}, {"id": "admin", "group": "system", "price": 6000, "unit": "once", "days": 3, "short": "Admin screen for the registrar", "name": "Admin screen for the registrar", "desc": "Review applications by program, open or close a course batch, and export lists, without touching the Google Sheet.", "needs": "apply", "upsell": "the admin screen"}, {"id": "ai", "group": "ai", "price": 7000, "unit": "once", "days": 4, "short": "AI assistant", "name": "AI assistant, Ask A.I.T.", "desc": "Answers questions about Senior High, TESDA courses and applying, day and night, using only what the school approves.", "upsell": "the AI assistant"}, {"id": "training", "group": "support", "price": 2000, "unit": "once", "days": 0, "short": "Staff training", "name": "Staff training", "desc": "Your staff learn to update pages, post announcements and handle applications."}, {"id": "content", "group": "support", "price": 1500, "unit": "once", "days": 1, "short": "Content writing help", "name": "Content writing help", "desc": "We polish your page text and prepare your photos.", "upsell": "content writing help"}, {"id": "maint", "group": "support", "price": 2000, "unit": "month", "days": 0, "short": "Optional maintenance", "name": "Optional monthly maintenance", "desc": "We handle your updates after launch. Repairs are already free for 12 months."}], "bonuses": [{"name": "Messenger button", "short": "Messenger button", "desc": "A button on every page that opens a chat with your Facebook page."}, {"name": "Facebook link previews", "short": "link previews", "desc": "Your photo, name and description show whenever the website is shared on Facebook."}, {"name": "Printable QR poster", "short": "QR poster", "desc": "An A4 poster with a QR code that opens the website."}, {"name": "New Facebook cover", "short": "Facebook cover", "desc": "A fresh cover for the official page, with the website address."}], "tiers": [{"id": "starter", "name": "Starter", "price": 9905, "for": "One official website that ends the contact confusion.", "items": ["shs", "tesda", "maps", "fb", "inquiry"]}, {"id": "signature", "name": "Signature", "price": 19900, "best": true, "for": "The website plus online application and a registrar list with ready Messenger replies.", "items": ["shs", "tesda", "gallery", "news", "faq", "maps", "fb", "inquiry", "apply", "staffview", "training"]}, {"id": "complete", "name": "Complete", "price": 34910, "tag": "Best value", "upnote": "signature", "for": "Everything, with the registrar's admin screen and the AI assistant.", "items": "all"}], "highlight": ["maps", "apply", "staffview", "admin", "ai"]}, "samples": [{"id": "mvcs", "name": "Mountain View Christian School", "kind": "School website with faculty and registrar portals and three AI assistants.", "url": "https://sites.google.com/view/mvcs-san-jose-inc/home", "embed": false, "features": ["admin", "ai", "downloads"]}, {"id": "inakay", "name": "Ina-Inakay Center Inc.", "kind": "Organization website, 22 pages on its own domain, with online forms and an AI assistant.", "url": "https://www.ina-inakay.com", "embed": true, "features": ["gallery", "fb", "inquiry", "apply", "ai"]}, {"id": "coed", "name": "TSU College of Education", "kind": "University college website with program pages, faculty and college news.", "url": "https://coed.tsu.edu.ph", "embed": true, "features": ["shs", "news", "downloads", "gallery"]}, {"id": "records", "name": "Records and Evidence Portal", "kind": "Accreditation evidence portal used on a kiosk during a quality assessment visit.", "url": "https://coed-tsu.github.io/records/", "embed": true, "features": ["admin", "downloads"]}, {"id": "btvted", "name": "BTVTEd Survey Visit", "kind": "Program accreditation portfolio prepared for a Level I survey visit.", "url": "https://jeremiemercadoportfolio.my.canva.site/btvted-level-i-site", "embed": false, "features": ["downloads", "gallery"]}], "kb": [{"w": 0.6, "k": ["strand", "strands", "abm", "gas", "humss", "track", "senior high", "shs", "grade 11", "grade 12", "offer"], "a": "Senior High at A.I.T. offers the Academic track (ABM, GAS and HUMSS) and the Tech-Voc track, under DepEd SHS Permits No. 789 s. 2016 and No. 113 s. 2017."}, {"k": ["free", "tuition", "fee", "fees", "bayad", "how much", "cost", "price", "miscellaneous"], "a": "For Senior High, A.I.T. advertises no registration fee, no tuition fee and no miscellaneous fee. For TESDA course fees and scholarships, please message the school or call 0935 022 4602."}, {"k": ["tesda", "course", "courses", "nc", "nc ii", "short course", "vocational", "skills"], "a": "TESDA-registered courses: Computer Systems Servicing NC II (280 hours), Electronic Products Assembly and Servicing NC II (260 hours), Dressmaking NC II (275 hours), and Shielded Metal Arc Welding NC I and NC II (268 hours each). Each also runs as a Mobile Training Program."}, {"k": ["welding", "smaw", "welder", "weld"], "a": "Yes. A.I.T. offers Shielded Metal Arc Welding (SMAW) NC I and NC II, 268 hours each, also as a Mobile Training Program."}, {"k": ["computer", "css", "networking", "it"], "a": "Computer Systems Servicing NC II runs for 280 hours, with hands-on practice in the computer lab."}, {"k": ["electronics", "epas", "electronic"], "a": "Electronic Products Assembly and Servicing NC II runs for 260 hours."}, {"k": ["dressmaking", "sewing", "tahi"], "a": "Dressmaking NC II runs for 275 hours."}, {"k": ["apply", "enroll", "enrol", "register", "application", "admission", "how"], "a": "Apply online on this website: choose a strand or course and get a reference number. The registrar then contacts you about the requirements and schedule."}, {"k": ["requirement", "requirements", "document", "documents", "bring", "need"], "a": "Requirements for Senior High and each TESDA course are posted here once the registrar provides them. For now, please message the school."}, {"k": ["where", "address", "location", "located", "map", "macarthur", "san sebastian", "directions"], "a": "A.I.T. is at the Liatsan Family Bldg., MacArthur Highway, San Sebastian, Tarlac City."}, {"k": ["contact", "call", "phone", "number", "email", "facebook", "messenger", "message"], "a": "Call 0935 022 4602, email ait_tvi@outlook.com, or message A.I.T. on Facebook."}, {"k": ["hi", "hello", "good morning", "good afternoon", "good evening", "hey", "kumusta"], "a": "Hello! I'm the Ask A.I.T. assistant. Ask me about Senior High, TESDA courses or how to apply."}, {"k": ["thank", "salamat"], "a": "You're welcome! Anything else about A.I.T.?"}], "chips": ["Is Senior High free?", "What strands do you offer?", "Do you have welding?", "Where is the school?", "How do I apply?"], "news": {"csv": "", "samples": [{"date": "2026-10-26", "title": "Sample: Senior High enrollment for S.Y. 2027-2028", "text": "This is sample text. Real announcements come from the school's Google Sheet."}, {"date": "2026-10-19", "title": "Sample: New SMAW NC II batch", "text": "This is sample text, to show how a new training batch announcement looks."}, {"date": "2026-10-12", "title": "Sample: No classes on Friday", "text": "This is sample text, to show how a class suspension notice looks."}]}, "flow": {"kind": "application", "appName": "A.I.T. Online Application", "refPrefix": "AIT-27-", "savedToast": "Application saved (sample only)", "views": {"form": {"tab": "Apply", "sub": "Online application", "url": "aittarlac.com/apply", "desc": "Students and trainees choose a strand or TESDA course from any phone and get a reference number. Each application becomes a row in the school's Google Sheet. Try it, then open the sheet."}, "staff": {"tab": "Registrar", "sub": "Registrar list", "url": "aittarlac.com/registrar", "desc": "The registrar sees every application, marks it Contacted, Complete or Enrolled, and copies a ready Messenger reply. In Complete, the admin screen adds filters by program and batch."}}, "formTitle": "Apply to A.I.T.", "formLead": "Takes about two minutes. The registrar replies by Messenger or text.", "fields": [{"id": "program", "label": "Program", "type": "select", "short": "Program", "placeholder": "Choose a strand or course", "options": ["Senior High: ABM", "Senior High: GAS", "Senior High: HUMSS", "Senior High: Tech-Voc", "TESDA: Computer Systems Servicing NC II", "TESDA: Electronic Products Assembly and Servicing NC II", "TESDA: Dressmaking NC II", "TESDA: SMAW NC I", "TESDA: SMAW NC II"]}, {"id": "type", "label": "I am", "type": "choice", "short": "Applicant", "options": ["Grade 10 completer", "Transferee", "Adult or out-of-school youth"]}, {"id": "name", "label": "Full name", "type": "text", "short": "Name"}, {"id": "mobile", "label": "Mobile number", "type": "tel", "short": "Mobile", "error": "Use 11 digits starting with 09."}, {"id": "school", "label": "Last school attended", "type": "text", "required": false, "short": "Last school"}, {"id": "notes", "label": "Questions for the registrar", "type": "textarea", "required": false, "short": "Notes", "help": "Optional. Please do not share ID numbers or grades here."}], "consent": "I agree that A.I.T. may use these details to process my application and contact me, under the Data Privacy Act of 2012. If I am under 18, my parent or guardian knows I am applying.", "submitLabel": "Send application", "slip": {"title": "Application received", "text": "The A.I.T. registrar will message or call you about the requirements and schedule."}, "slipFields": ["program", "type", "name"], "sheetTitle": "Applications", "sheetCols": ["name", "mobile", "program", "type"], "staffTitle": "Applications", "staffCols": ["name", "program", "type"], "statuses": ["New", "Contacted", "Complete", "Enrolled"], "message": "Hello po {name}! Salamat sa application ninyo for {program} sa A.I.T. Ref no. {ref}. Ang requirements at schedule po ay nasa aittarlac.com/#admissions. Welcome po kayo sa office sa MacArthur Hwy, San Sebastian, Tarlac City.", "sampleRows": [{"ts": "Oct 26, 9:14 AM", "ref": "AIT-27-10482", "name": "Sample Applicant 1", "mobile": "0917 000 0001", "program": "Senior High: ABM", "type": "Grade 10 completer", "status": "Contacted"}, {"ts": "Oct 28, 3:40 PM", "ref": "AIT-27-10517", "name": "Sample Applicant 2", "mobile": "0917 000 0002", "program": "TESDA: SMAW NC II", "type": "Adult or out-of-school youth", "status": "New"}, {"ts": "Oct 29, 7:05 PM", "ref": "AIT-27-10533", "name": "Sample Applicant 3", "mobile": "0917 000 0003", "program": "TESDA: Computer Systems Servicing NC II", "type": "Transferee", "status": "New"}]}};
+/* Proposal Studio engine: core.js
+   Everything client-specific comes from window.SITE (rendered from client.json by build.py).
+   Do not put client text here. Optional sections are skipped when their elements are absent. */
+const SITE=window.SITE, CONFIG=SITE.config;
+const GROUPS=SITE.pricing.groups, FEATURES=SITE.pricing.features, BONUSES=SITE.pricing.bonuses||[], HIGHLIGHT=SITE.pricing.highlight||[];
+const TIERS=SITE.pricing.tiers.map(t=>({...t,items:t.items==="all"?FEATURES.filter(f=>!f.locked&&f.unit==="once").map(f=>f.id):t.items}));
+const SAMPLES=SITE.samples||[], KB=SITE.kb||[], CHIPS=SITE.chips||[], SAMPLE_NEWS=(SITE.news&&SITE.news.samples)||[];
+const HOOKS={click:[],submit:[],change:[],apply:null,init:[]};
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const r2=n=>Math.round(n*100)/100;
+const fmt=n=>{const v=r2(n);return v.toLocaleString("en-PH",{minimumFractionDigits:v%1?2:0,maximumFractionDigits:2})};
+const peso=n=>"₱"+fmt(n);
+const pesoBig=n=>`<span class="cur">₱</span>${fmt(n)}`;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const byId=Object.fromEntries(FEATURES.map(f=>[f.id,f]));
+const tierById=Object.fromEntries(TIERS.map(t=>[t.id,t]));
+const LS=CONFIG.lsKey+":";
+const store={get(k){try{return JSON.parse(localStorage.getItem(LS+k))}catch(e){return null}},set(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}};
+const issued=new Date(CONFIG.issued+"T00:00:00"), validUntil=new Date(issued.getTime()+CONFIG.validDays*864e5);
+const MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const fmtDate=d=>`${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+const fmtUS=d=>`${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+const reduced=()=>matchMedia("(prefers-reduced-motion: reduce)").matches;
+const inFB=()=>/FBAN|FBAV|FB_IAB|FBIOS|FB4A|Instagram/i.test(navigator.userAgent||"");
+let selected=new Set(), lastAdded=null, fmFocus=null, fmPost=null;
+function toast(m,ms){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),ms||2600)}
+function greeting(){const h=new Date().getHours();return h<12?"Good morning":h<18?"Good afternoon":"Good evening"}
+function openModal(titleHTML,bodyHTML){fmFocus=document.activeElement;$("#fmTitle").innerHTML=titleHTML;$("#fmBody").innerHTML=bodyHTML;$("#fmodal").classList.add("open");document.documentElement.style.overflow="hidden";setTimeout(()=>{const f=$("#fmodal .x");f&&f.focus()},60)}
+function closeForm(){if(!$("#fmodal").classList.contains("open"))return;$("#fmodal").classList.remove("open");document.documentElement.style.overflow="";if(fmFocus)fmFocus.focus({preventScroll:true})}
+
+/* ---------- pricing ---------- */
+function price(sel){
+  const once=[...sel].map(id=>byId[id]).filter(f=>f&&f.unit==="once");
+  const list=byId.base.price+once.reduce((a,f)=>a+f.price,0);
+  let best={total:list,tier:null,extras:once.map(f=>f.id)};
+  TIERS.forEach(t=>{
+    if(!t.items.every(id=>sel.has(id))) return;
+    const extras=once.filter(f=>!t.items.includes(f.id));
+    const total=t.price+extras.reduce((a,f)=>a+f.price,0);
+    if(total<best.total) best={total,tier:t,extras:extras.map(f=>f.id)};
+  });
+  const month=[...sel].map(id=>byId[id]).filter(f=>f&&f.unit==="month").reduce((a,f)=>a+f.price,0);
+  const days=byId.base.days+once.reduce((a,f)=>a+(f.days||0),0);
+  return {...best,total:r2(best.total),list,save:list-best.total,month,days};
+}
+const tierList=t=>byId.base.price+t.items.reduce((a,id)=>a+byId[id].price,0);
+const weeks=d=>Math.max(3,Math.ceil(d/5));
+const label=P=>(P.tier?P.tier.name:"Custom")+(P.tier&&P.extras.length?` + ${P.extras.length} extra${P.extras.length>1?"s":""}`:"");
+function renderMenu(){
+  if(!$("#courses")) return;
+  $("#courses").innerHTML=TIERS.map(t=>{
+    const ord=[...t.items.filter(id=>HIGHLIGHT.includes(id)).sort((a,b)=>HIGHLIGHT.indexOf(a)-HIGHLIGHT.indexOf(b)),...t.items.filter(id=>!HIGHLIGHT.includes(id))];
+    const items=["Website with "+CONFIG.domain,...ord.map(id=>byId[id].short)];
+    const max=t.best?12:8, shown=items.slice(0,max);
+    return `<article class="course ${t.best?"best":""}" data-tier="${t.id}">
+      <div class="chef">${t.best?CONFIG.recommendLabel:t.tag||""}</div>
+      <h3>${t.name}</h3>
+      <p class="for">${t.for}</p>
+      <div class="price">${pesoBig(t.price)}</div>
+      <p class="reg"><s>${peso(tierList(t))}</s><b>Save ${peso(tierList(t)-t.price)}</b></p>${t.upnote?`<p class="upnote">Only ${peso(t.price-tierById[t.upnote].price)} more than ${tierById[t.upnote].name}</p>`:""}
+      <div class="orn"></div>
+      <ul>${shown.map((x,i)=>`<li class="${i&&HIGHLIGHT.includes(ord[i-1])?"hl":""}">${x}</li>`).join("")}${items.length>max?`<li class="more">and ${items.length-max} more</li>`:""}${BONUSES.length?`<li class="more">Plus the free bonuses</li>`:""}</ul>
+      <button class="btn ${t.best?"btn-yellow":"btn-line"}" type="button" data-choose="${t.id}">Choose ${t.name}</button>
+    </article>`;
+  }).join("");
+}
+function renderDrawer(){
+  $("#drawerBody").innerHTML=GROUPS.map(([g,n,sub])=>`<div class="grp">${n}${sub?`<small>${sub}</small>`:""}</div>`+FEATURES.filter(f=>f.group===g).map(f=>{
+    const p=f.unit==="month"?[peso(f.price),"per month"]:[peso(f.price),"one-time"];
+    return `<div class="opt"><input type="checkbox" id="o-${f.id}" data-f="${f.id}"><label for="o-${f.id}"><span class="name">${f.name}</span><span class="desc">${f.desc}${f.needs?` Comes with the ${byId[f.needs].short.toLowerCase()}.`:""}</span><span class="inpkg" data-inpkg="${f.id}"></span></label><div class="pp">${p[0]}<small>${p[1]}</small></div></div>`;
+  }).join("")).join("")+(BONUSES.length?`<div class="grp">Free bonuses<small>Included in every package</small></div>`+BONUSES.map((b,i)=>`<div class="opt"><input type="checkbox" id="b-${i}" checked disabled aria-label="${esc(b.name)}, included"><div><span class="name">${b.name}</span><span class="desc">${b.desc}</span></div><div class="pp">₱0<small>included</small></div></div>`).join(""):"");
+}
+function sync(){
+  const P=price(selected);
+  $$("input[data-f]").forEach(i=>i.checked=selected.has(i.dataset.f));
+  $$("[data-inpkg]").forEach(s=>s.textContent=(P.tier&&P.tier.items.includes(s.dataset.inpkg))?`In your ${P.tier.name} package`:"");
+  $$("[data-tier]").forEach(el=>{const t=tierById[el.dataset.tier],on=P.tier&&P.tier.id===t.id;el.classList.toggle("chosen",!!on);el.querySelector("[data-choose]").textContent=on?"Your choice":`Choose ${t.name}`});
+  let L="";
+  if(P.tier){
+    L+=`<li class="pkg ${lastAdded==="tier"?"new":""}"><span>${P.tier.name}</span><span>${pesoBig(P.tier.price)}</span></li>`;
+    L+=["Website with "+CONFIG.domain,...P.tier.items.map(id=>byId[id].short)].map(x=>`<li class="sub"><span>${x}</span><span></span></li>`).join("");
+  }else L+=`<li><span>Website with ${CONFIG.domain}</span><span>${peso(byId.base.price)}</span></li>`;
+  P.extras.forEach(id=>{L+=`<li class="${lastAdded===id?"new":""}"><span>${byId[id].short}</span><span>${peso(byId[id].price)}</span></li>`});
+  if(BONUSES.length) L+=`<li class="bon"><span>Free bonuses: ${BONUSES.map(b=>b.short||b.name).join(", ")}</span><span>₱0</span></li>`;
+  L+=`<li class="sub"><span>Web address: ${CONFIG.domain} (${CONFIG.domainNote||"included"})</span><span></span></li>`;
+  $("#tLines").innerHTML=L;
+  $("#tSaveRow").style.display=P.save>0?"flex":"none"; $("#tSave").textContent="−"+peso(P.save);
+  $("#tTotal").innerHTML=pesoBig(P.total);
+  $("#tMonthRow").style.display=P.month?"flex":"none"; $("#tMonth").textContent=peso(P.month)+"/month";
+  const down=r2(P.total*CONFIG.downPct/100);
+  $("#qBig").innerHTML=pesoBig(P.total);
+  $("#qSub").innerHTML=`<b>${peso(down)}</b> to start, <b>${peso(r2(P.total-down))}</b> on launch. Ready in about <b>${weeks(P.days)} weeks</b> once your content is in.`;
+  $("#pillLabel").textContent=P.tier?`${P.tier.name} package`+(P.extras.length?` + ${P.extras.length} extra${P.extras.length>1?"s":""}`:""):"Your selection";
+  $("#pillTotal").innerHTML=pesoBig(P.total);
+  $("#dLabel").textContent=P.tier?`${label(P)}, saving ${peso(P.save)}`:"Custom selection"; $("#dTotal").innerHTML=pesoBig(P.total);
+  const up=$("#upsell"), top=TIERS[TIERS.length-1], best=TIERS.find(t=>t.best);
+  const miss=top.items.filter(id=>!selected.has(id)), gap=r2(top.price-P.total);
+  up.hidden=!(P.tier&&best&&P.tier.id===best.id&&best!==top&&miss.length&&gap>0);
+  if(!up.hidden) up.innerHTML=`<b>Upgrade to ${top.name} for ${peso(gap)} more</b><p>Adds ${upList(miss)}. Worth ${peso(miss.reduce((a,id)=>a+byId[id].price,0))} if ordered one by one.</p><button class="btn btn-navy" type="button" data-choose="${top.id}">Upgrade to ${top.name}</button>`;
+  const ai=selected.has("ai"); if($("#mkChatTag")) $("#mkChatTag").textContent=ai?"":"(add-on)"; if($("#cpAdd")) $("#cpAdd").hidden=ai||!byId.ai;
+  renderAdds(); save(); lastAdded=null;
+}
+function upList(miss){
+  const top=[...miss].sort((a,b)=>(HIGHLIGHT.indexOf(b)>-1)-(HIGHLIGHT.indexOf(a)>-1)).map(id=>byId[id].upsell||byId[id].short);
+  const show=top.slice(0,3), rest=top.length-show.length;
+  return rest>0?`${show.join(", ")} and ${rest} more`:show.length>1?`${show.slice(0,-1).join(", ")} and ${show[show.length-1]}`:show[0];
+}
+const hashOf=()=>"q="+[...selected].join(",");
+function save(){store.set("sel",[...selected]);try{if(/q=/.test(location.hash)||save.touched)history.replaceState(null,"",location.pathname+location.search+"#"+hashOf())}catch(e){}}
+function load(){
+  const m=location.hash.match(/q=([^&]*)/);
+  if(m) return fixNeeds(new Set(decodeURIComponent(m[1]).split(",").filter(id=>byId[id]&&!byId[id].locked)));
+  const s=store.get("sel"); if(Array.isArray(s)) return fixNeeds(new Set(s.filter(id=>byId[id]&&!byId[id].locked)));
+  return new Set(tierById[CONFIG.defaultTier].items);
+}
+function fixNeeds(s){[...s].forEach(id=>{const n=byId[id].needs;if(n)s.add(n)});return s}
+function toggleFeature(id,on){
+  const f=byId[id]; let msg=f.short+(on?" added":" removed"); save.touched=true;
+  if(on){selected.add(id);lastAdded=id;if(f.needs&&!selected.has(f.needs)){selected.add(f.needs);msg=`${f.short} added, with the ${byId[f.needs].short.toLowerCase()} it needs`}}
+  else{selected.delete(id);const deps=FEATURES.filter(x=>x.needs===id&&selected.has(x.id));if(deps.length){deps.forEach(x=>selected.delete(x.id));msg=`${f.short} removed, with ${deps.map(x=>x.short.toLowerCase()).join(", ")}`}}
+  sync(); return msg;
+}
+
+/* ---------- carousel of past work ---------- */
+let cur=0; const frames={}, REPLICA={};
+function probe(src){return new Promise(r=>{const i=new Image();i.onload=()=>r(src);i.onerror=()=>r(null);i.src=src})}
+function renderTabs(){$("#tabs").innerHTML=SAMPLES.map((s,i)=>`<button type="button" role="tab" id="tab-${s.id}" aria-selected="false" data-slide="${i}">${s.name}</button>`).join("")}
+function fitFrame(){
+  const v=$("#view"); if(!v||!SAMPLES[cur]) return; const f=frames[SAMPLES[cur].id]; if(!f) return;
+  const W=v.clientWidth, H=v.clientHeight, vw=W<700?W:1280, s=W/vw;
+  if(f.tagName==="IFRAME"){f.style.width=vw+"px";f.style.height=(H/s)+"px";f.style.transform=`scale(${s})`}
+}
+async function show(i,focusTab){
+  if(!SAMPLES.length) return;
+  cur=(i+SAMPLES.length)%SAMPLES.length; const s=SAMPLES[cur], v=$("#view");
+  v.classList.remove("live");
+  $$("#tabs [role=tab]").forEach((b,j)=>{b.setAttribute("aria-selected",j===cur);b.tabIndex=j===cur?0:-1});
+  const tab=$("#tab-"+s.id); if(focusTab) tab.focus();
+  try{const tb=$("#tabs");if(tb.scrollWidth>tb.clientWidth)tb.scrollTo({left:tab.offsetLeft-tb.offsetLeft-20,behavior:"smooth"})}catch(e){}
+  $("#carCount").textContent=`${cur+1} of ${SAMPLES.length}`;
+  $("#carName").textContent=s.name; $("#carKind").textContent=s.kind;
+  $("#carVisit").href=s.url; $("#carUrl").textContent=new URL(s.url).hostname.replace(/^www\./,"");
+  for(const [k,f] of Object.entries(frames)){ if(k!==s.id&&f.tagName==="IFRAME"){f.remove();delete frames[k]} else f.style.display="none" }
+  $$("#view .shield,#view .done-explore").forEach(e=>e.remove());
+  $("#loading").style.display="grid";
+  if(!frames[s.id]){
+    let el;
+    if(s.embed){
+      el=document.createElement("iframe"); el.title=s.name+" website"; el.loading="lazy"; el.referrerPolicy="no-referrer";
+      el.setAttribute("sandbox","allow-scripts allow-same-origin allow-forms allow-popups");
+      el.addEventListener("load",()=>{if(SAMPLES[cur]===s) $("#loading").style.display="none"});
+      el.src=s.url;
+    }else{
+      el=document.createElement("div"); el.className="poster-shot";
+      const shot=await probe("samples/"+s.id+".webp");
+      if(shot) el.classList.add("has-shot");
+      el.innerHTML=shot?`<img src="${shot}" alt="${esc(s.name)} home page">`:`<div class="nopreview">A preview is not available here.<br>Use "Visit the full website" below.</div>`;
+      el.dataset.loaded=1;
+    }
+    frames[s.id]=el; v.appendChild(el);
+    if(SAMPLES[cur]!==s){el.style.display="none";return}
+  }
+  const f=frames[s.id]; f.style.display="block";
+  v.classList.toggle("poster-mode",f.classList.contains("has-shot"));
+  if(f.dataset.loaded||f._loaded||f.classList.contains("poster-shot")) $("#loading").style.display="none";
+  if(f.tagName==="IFRAME") f.addEventListener("load",()=>{f._loaded=true},{once:true});
+  const shield=document.createElement("button"); shield.type="button"; shield.className="shield";
+  shield.innerHTML=`<span>${s.embed?"Tap to explore this website":"Tap to open the full website"}</span>`;
+  shield.onclick=()=>{ if(!s.embed){window.open(s.url,"_blank","noopener");return} v.classList.add("live"); };
+  v.appendChild(shield);
+  const done=document.createElement("button"); done.type="button"; done.className="btn btn-yellow btn-sm done-explore"; done.textContent="Done exploring";
+  done.onclick=()=>v.classList.remove("live"); v.appendChild(done);
+  fitFrame(); renderAdds();
+}
+function renderAdds(){
+  const s=SAMPLES[cur], box=$("#carAdds"); if(!s||!box) return;
+  box.innerHTML=s.features.filter(id=>byId[id]).map(id=>{const f=byId[id],on=selected.has(id);return `<button type="button" aria-pressed="${on}" data-add="${id}"><i>${on?"✓":"+"}</i>${f.short}</button>`}).join("");
+}
+
+/* ---------- sample assistant ---------- */
+function addMsg(h,w){const m=document.createElement("div");m.className="msg "+w;m.innerHTML=h;const box=$("#msgs");box.appendChild(m);box.scrollTop=box.scrollHeight;return m}
+function answer(q){
+  const s=q.toLowerCase(); let best=null,score=0;
+  const hit=k=>k.length<=3?new RegExp("\\b"+k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b").test(s):s.includes(k);
+  KB.forEach(e=>{let n=0;e.k.forEach(k=>{if(hit(k))n+=(k.length>5?2:1)*(e.w||1)});if(n>score){score=n;best=e}});
+  return best?best.a:CONFIG.chatFallback;
+}
+function ask(q){q=q.trim();if(!q)return;addMsg(esc(q),"me");const t=addMsg("<i></i><i></i><i></i>","bot typing");setTimeout(()=>{t.remove();addMsg(answer(q),"bot")},600+Math.random()*400)}
+let chatFocus=null;
+function openChat(){chatFocus=document.activeElement;$("#cpanel").classList.add("open");setTimeout(()=>$("#askInput").focus({preventScroll:true}),60)}
+function closeChat(){if(!$("#cpanel")||!$("#cpanel").classList.contains("open"))return;$("#cpanel").classList.remove("open");if(chatFocus)chatFocus.focus({preventScroll:true})}
+
+/* ---------- Messenger replies: copy, with a fallback for in-app browsers ---------- */
+async function copyReply(btn){
+  const el=document.getElementById(btn.dataset.copyReply), text=el.textContent.trim(), hint=btn.parentElement.querySelector(".copy-hint");
+  let ok=false;
+  try{if(navigator.clipboard&&window.isSecureContext&&!copyReply.forceFail){await navigator.clipboard.writeText(text);ok=true}}catch(e){}
+  if(!ok&&!copyReply.forceFail){try{const ta=document.createElement("textarea");ta.value=text;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0";document.body.appendChild(ta);ta.select();ok=document.execCommand("copy");ta.remove()}catch(e){}}
+  $$(".bubble.sel").forEach(b=>b.classList.remove("sel")); $$(".copy-hint.on").forEach(h=>{h.classList.remove("on");h.textContent=""});
+  if(ok){btn.textContent="Copied";toast("Copied. Paste it in Messenger.");setTimeout(()=>btn.textContent="Copy reply",2200);return}
+  const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r);
+  el.classList.add("sel"); if(hint){hint.textContent="Press and hold to copy"; hint.classList.add("on")}
+}
+
+/* ---------- countdown (dates from config; placeholder until set) ---------- */
+function cdTick(){
+  const E=CONFIG.countdown; if(!E||!$("#cd")) return false;
+  const set=(d,h,m,s)=>{$("#cdD").textContent=d;$("#cdH").textContent=h;$("#cdM").textContent=m;$("#cdS").textContent=s};
+  $("#cdTitle").textContent=E.title;
+  if(!E.start){set("--","--","--","--");$("#cdText").textContent=E.placeholder;$("#cdTag").hidden=false;return false}
+  $("#cdTag").hidden=true;
+  const start=new Date(E.start+"T00:00:00"), end=E.end?new Date(E.end+"T23:59:59"):null, now=new Date();
+  let target,txt;
+  if(now<start){target=start;txt=`Opens ${fmtUS(start)}${end?`, until ${fmtUS(end)}`:""}.`}
+  else if(!end||now<=end){target=end;txt=end?`Now open until ${fmtUS(end)}. ${E.openCta||""}`.trim():`Now open. ${E.openCta||""}`.trim()}
+  else{set("0","0","0","0");$("#cdText").textContent=`Closed on ${fmtUS(end)}. ${E.closedText||""}`.trim();return false}
+  $("#cdText").textContent=txt;
+  if(!target){set("--","--","--","--");return false}
+  let ms=Math.max(0,target-now); const d=Math.floor(ms/864e5);ms-=d*864e5;const h=Math.floor(ms/36e5);ms-=h*36e5;const m=Math.floor(ms/6e4);const s=Math.floor((ms-m*6e4)/1e3);
+  set(d,String(h).padStart(2,"0"),String(m).padStart(2,"0"),String(s).padStart(2,"0")); return true;
+}
+
+/* ---------- announcements from a published Google Sheet (CSV) ---------- */
+function parseCSV(t){
+  const rows=[];let row=[],f="",q=false;
+  for(let i=0;i<t.length;i++){const c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;else if(c===","){row.push(f);f=""}else if(c==="\n"||c==="\r"){if(c==="\r"&&t[i+1]==="\n")i++;row.push(f);rows.push(row);row=[];f=""}else f+=c}
+  if(f!==""||row.length){row.push(f);rows.push(row)}
+  return rows.filter(r=>r.some(x=>x.trim()));
+}
+function renderNews(items,sample,note){
+  const d=s=>{const x=new Date(s+(/^\d{4}-\d{2}-\d{2}$/.test(s)?"T00:00:00":""));return isNaN(x)?s:fmtDate(x)};
+  $("#newsList").innerHTML=items.slice(0,6).map(n=>`<article class="ann">${sample?`<span class="badge sample"><i></i>Sample</span>`:""}<time>${esc(d(n.date))}</time><h3>${esc(n.title.replace(/^Sample:\s*/,""))}</h3><p>${esc(n.text)}</p></article>`).join("");
+  if(note) $("#newsHow").textContent=note;
+}
+async function loadNews(){
+  if(!$("#newsList")) return;
+  if(!CONFIG.announcementsCsv){renderNews(SAMPLE_NEWS,true);return}
+  try{
+    const r=await fetch(CONFIG.announcementsCsv,{cache:"no-store"}); if(!r.ok) throw 0;
+    let rows=parseCSV(await r.text()); if(rows[0]&&/date/i.test(rows[0][0])) rows=rows.slice(1);
+    const items=rows.map(x=>({date:(x[0]||"").trim(),title:(x[1]||"").trim(),text:(x[2]||"").trim()})).filter(x=>x.title);
+    items.sort((a,b)=>(new Date(b.date)-new Date(a.date))||0);
+    if(!items.length) throw 0; renderNews(items,false);
+  }catch(e){renderNews(SAMPLE_NEWS,true,"The Google Sheet could not be loaded right now, so sample updates are shown.")}
+}
+
+/* ---------- Facebook Page Plugin, with a fallback card that always shows ---------- */
+function loadFB(){
+  if(loadFB.done||!$("#fbGrid")) return; loadFB.done=true;
+  const grid=$("#fbGrid"), fail=()=>{if(!$("#fbEmbed iframe")) grid.classList.add("fb-off")};
+  const root=document.createElement("div"); root.id="fb-root"; document.body.prepend(root);
+  const w=Math.max(180,Math.min(500,$("#fbEmbed").clientWidth-24)); $(".fb-page").dataset.width=w;
+  const s=document.createElement("script"); s.async=true; s.defer=true; s.crossOrigin="anonymous";
+  s.src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0";
+  s.onerror=fail; document.body.appendChild(s);
+  const iv=setInterval(()=>{if($("#fbEmbed iframe")){$("#fbEmbed").classList.add("loaded");clearInterval(iv)}},500);
+  setTimeout(()=>{clearInterval(iv);fail()},9000);
+}
+
+/* ---------- QR poster and printing ---------- */
+function posterPreview(){
+  const box=$("#posterPrev"); if(!box) return;
+  const p=$("#poster").cloneNode(true); p.removeAttribute("id"); p.querySelectorAll("img").forEach(i=>{i.alt="";i.loading="lazy"});
+  box.innerHTML=""; box.appendChild(p);
+  const fit=()=>{const s=box.clientWidth/p.offsetWidth; p.style.transform=`scale(${s})`}; fit(); addEventListener("resize",fit);
+}
+function printNote(what){
+  fmPost=null;
+  openModal(`Open in your browser to print<small>Facebook's built-in browser cannot print</small>`,
+    `<div class="gf"><div class="gf-card gf-head"><h4>To print ${what}</h4><p>Tap the three dots (⋯) at the top right, then choose <b>Open in browser</b> (Chrome or Safari). Then tap the print button again.</p></div><div class="gf-acts"><button class="btn btn-navy" type="button" data-fm-close>Okay</button></div></div>`);
+}
+function printPoster(){if(inFB()){printNote("the QR poster");return}document.body.classList.add("print-poster");window.print();setTimeout(()=>document.body.classList.remove("print-poster"),1000)}
+function printQuote(){if(inFB()){printNote("the quotation");return}document.body.classList.remove("print-poster");buildQuote();window.print()}
+function buildQuote(){
+  const P=price(selected), down=r2(P.total*CONFIG.downPct/100), Q=CONFIG.print; let n=1;
+  const rows=[];
+  if(P.tier) rows.push(`<tr><td></td><td><b>${P.tier.name} package</b></td><td class="n"><b>${peso(P.tier.price)}</b></td></tr>`);
+  rows.push(`<tr><td>${n++}</td><td><b>${byId.base.name}</b><br>${byId.base.desc}</td><td class="n">${P.tier?"included":peso(byId.base.price)}</td></tr>`);
+  (P.tier?P.tier.items:[]).forEach(id=>rows.push(`<tr><td>${n++}</td><td><b>${byId[id].name}</b><br>${byId[id].desc}</td><td class="n">included</td></tr>`));
+  P.extras.forEach(id=>rows.push(`<tr><td>${n++}</td><td><b>${byId[id].name}</b>${P.tier?" (added)":""}<br>${byId[id].desc}</td><td class="n">${peso(byId[id].price)}</td></tr>`));
+  BONUSES.forEach(b=>rows.push(`<tr><td>${n++}</td><td><b>${b.name}</b> (free bonus)<br>${b.desc}</td><td class="n">₱0</td></tr>`));
+  FEATURES.filter(f=>f.unit==="month"&&selected.has(f.id)).forEach(f=>rows.push(`<tr><td>${n++}</td><td><b>${f.name}</b><br>${f.desc}</td><td class="n">${peso(f.price)} / month</td></tr>`));
+  const dev=CONFIG.developer?`${esc(CONFIG.developer)}, ${esc(CONFIG.role)}<br>${[CONFIG.email,CONFIG.phone].filter(Boolean).map(esc).join(" | ")}`:`Proposal for ${esc(CONFIG.org)}`;
+  $("#printArea").innerHTML=`
+  <div class="pq-head"><div><h1>${Q.title}</h1><p>${dev}</p></div>
+  <div style="text-align:right"><p><b>${CONFIG.quoteNo}</b><br>Issued ${fmtDate(issued)}<br>Valid until ${fmtDate(validUntil)}</p></div></div>
+  <div class="pq-grid"><div><b>Prepared for</b>${CONFIG.clientName?esc(CONFIG.clientName)+"<br>":""}${esc(CONFIG.clientRole)}<br>${esc(CONFIG.org)}, ${esc(CONFIG.orgAddress)}<br>${esc(CONFIG.orgEmail)} | ${esc(CONFIG.orgPhone)}</div><div><b>Project</b>${Q.project}</div></div>
+  <table class="pq"><thead><tr><th>#</th><th>Item</th><th style="text-align:right">Amount</th></tr></thead><tbody>${rows.join("")}
+  ${P.save?`<tr class="sum first"><td></td><td>Items at regular prices</td><td class="n">${peso(P.list)}</td></tr><tr class="sum"><td></td><td>Package saving</td><td class="n">−${peso(P.save)}</td></tr>`:""}
+  <tr class="sum ${P.save?"":"first"}"><td></td><td><b>Total</b></td><td class="n"><b>${peso(P.total)}</b></td></tr>
+  <tr class="sum"><td></td><td>Down payment (${CONFIG.downPct}%) upon approval</td><td class="n">${peso(down)}</td></tr>
+  <tr class="sum"><td></td><td>Balance upon launch</td><td class="n">${peso(r2(P.total-down))}</td></tr></tbody></table>
+  <div class="pq-terms"><b>Terms</b><ul>
+  <li>${CONFIG.warrantyMonths} months of free repairs from launch: anything on the website that breaks or stops working is fixed at no cost.</li>
+  <li>Estimated build time: about ${weeks(P.days)} weeks after complete content is received. Two rounds of revisions per page.</li>
+  ${Q.terms.map(t=>`<li>${t}</li>`).join("")}</ul></div>
+  <div class="pq-sign"><div>${CONFIG.developer?esc(CONFIG.developer):"&nbsp;"}<br>Prepared by, ${esc(CONFIG.role)}</div><div>${CONFIG.clientName?esc(CONFIG.clientName):"&nbsp;"}<br>Conforme, ${esc(CONFIG.clientRole)}, ${esc(CONFIG.org)}</div></div>`;
+}
+
+/* ---------- intro, menu, scroll ---------- */
+function showIntro(){const el=$("#intro");el.style.display="flex";requestAnimationFrame(()=>el.classList.remove("gone"));document.documentElement.style.overflow="hidden";setTimeout(()=>{const b=el.querySelector(".acts .btn");b&&b.focus({preventScroll:true})},700)}
+function hideIntro(){const el=$("#intro");el.classList.add("gone");document.documentElement.style.overflow="";store.set("introSeen",1);setTimeout(()=>{el.style.display="none"},650)}
+function setMenu(open){$("#menuPanel").classList.toggle("open",open);$("#menuBtn").setAttribute("aria-expanded",open)}
+function onScroll(){
+  const mid=innerHeight*.35; let now=null;
+  $$(".nav a").forEach(a=>{const s=document.getElementById(a.getAttribute("href").slice(1));if(!s)return;const r=s.getBoundingClientRect();if(r.top<mid&&r.bottom>mid)now=a.getAttribute("href")});
+  $$(".nav a").forEach(a=>a.classList.toggle("now",a.getAttribute("href")===now));
+  const m=$("#menu"), q=$("#quote"); if(!m||!q) return;
+  const mr=m.getBoundingClientRect(), qr=q.getBoundingClientRect();
+  $("#pill").classList.toggle("show",mr.top<innerHeight*.5&&qr.top>innerHeight*.6);
+}
+function goApply(){if(HOOKS.apply)HOOKS.apply();const t=$("#"+(CONFIG.applyId||"apply"));if(t)t.scrollIntoView({behavior:reduced()?"auto":"smooth"})}
+
+/* ---------- init ---------- */
+function init(){
+  document.documentElement.classList.add("js");
+  $("#reach").innerHTML=CONFIG.developer?`Questions, or ready to proceed? Reach me: <b>${esc(CONFIG.developer)}</b>${CONFIG.email?`, <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>`:""}, or send me a personal message on Facebook Messenger.`:CONFIG.reachGeneric;
+  $$("[data-greeting]").forEach(e=>e.textContent=greeting());
+  $$("[data-qno]").forEach(e=>e.textContent=CONFIG.quoteNo);
+  $$("[data-valid]").forEach(e=>e.textContent=fmtDate(validUntil));
+  $$("[data-devname]").forEach(e=>e.textContent=CONFIG.developer);
+  $$("[data-devcontact]").forEach(e=>e.textContent=[CONFIG.role,CONFIG.email,CONFIG.phone].filter(Boolean).join(" | "));
+  if($("#devCol")) $("#devCol").hidden=!CONFIG.developer;
+  $$("[data-og-title]").forEach(e=>e.textContent=CONFIG.ogTitle); $$("[data-og-desc]").forEach(e=>e.textContent=CONFIG.ogDesc);
+  if(CONFIG.messenger) $$("[data-msgr]").forEach(a=>a.href=CONFIG.messenger);
+  renderMenu(); renderDrawer(); if($("#tabs")) renderTabs();
+  const sharedLink=/q=/.test(location.hash);
+  selected=load(); sync(); buildQuote();
+  HOOKS.init.forEach(f=>f());
+  if($("#msgs")){addMsg(CONFIG.chatHello,"bot");$("#chips").innerHTML=CHIPS.map(c=>`<button type="button" data-chip>${c}</button>`).join("")}
+  if(cdTick()) setInterval(cdTick,1000);
+  loadNews(); posterPreview();
+  if(!store.get("introSeen")&&!sharedLink) showIntro(); else $("#intro").style.display="none";
+  if("IntersectionObserver" in window){
+    const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");ro.unobserve(e.target)}}),{rootMargin:"0px 0px -8% 0px"});
+    $$(".reveal").forEach(el=>ro.observe(el));
+    if($("#work")){const wo=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){wo.disconnect();show(0)}},{rootMargin:"600px"}); wo.observe($("#work"))}
+    if($("#facebook")){const fo=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){fo.disconnect();loadFB()}},{rootMargin:"500px"}); fo.observe($("#facebook"))}
+  }else{$$(".reveal").forEach(el=>el.classList.add("in"));show(0);loadFB()}
+
+  document.addEventListener("change",e=>{
+    for(const h of HOOKS.change) if(h(e)) return;
+    const id=e.target.dataset&&e.target.dataset.f; if(id){const m=toggleFeature(id,e.target.checked);if(/ with /.test(m))toast(m)}});
+  document.addEventListener("click",e=>{
+    if(e.target.closest("#menuBtn")){setMenu(!$("#menuPanel").classList.contains("open"));return}
+    if(e.target.closest("#menuPanel a")) setMenu(false);
+    if(e.target.closest("[data-chat-open]")){openChat();return}
+    if(e.target.closest("[data-chat-close]")){closeChat();return}
+    if(e.target.closest("[data-fm-close]")){closeForm();return}
+    const ap=e.target.closest("[data-apply]"); if(ap){e.preventDefault();goApply();return}
+    const cr=e.target.closest("[data-copy-reply]"); if(cr){copyReply(cr);return}
+    for(const h of HOOKS.click) if(h(e)) return;
+    const t=e.target.closest("[data-begin],[data-choose],[data-chip],[data-slide],[data-step],[data-add],[data-open-drawer],[data-close-drawer],[data-album]");
+    if(!t) return;
+    const d=t.dataset;
+    if("begin" in d) hideIntro();
+    else if(d.choose){const keep=FEATURES.filter(f=>f.unit==="month"&&selected.has(f.id)).map(f=>f.id);selected=new Set([...tierById[d.choose].items,...keep]);lastAdded="tier";save.touched=true;sync();toast(tierById[d.choose].name+" package chosen")}
+    else if("chip" in d) ask(t.textContent);
+    else if(d.slide) show(+d.slide);
+    else if(d.step) show(cur+(+d.step));
+    else if(d.add){const m=toggleFeature(d.add,!selected.has(d.add));toast(m)}
+    else if("album" in d) toast(CONFIG.albumToast);
+    else if("openDrawer" in d) openDrawer();
+    else if("closeDrawer" in d) closeDrawer();
+  });
+  if($("#tabs")) $("#tabs").addEventListener("keydown",e=>{if(e.key==="ArrowRight"){e.preventDefault();show(cur+1,true)}if(e.key==="ArrowLeft"){e.preventDefault();show(cur-1,true)}});
+  if($("#view")) $("#view").addEventListener("mouseleave",()=>$("#view").classList.remove("live"));
+  if($("#askForm")) $("#askForm").addEventListener("submit",e=>{e.preventDefault();ask($("#askInput").value);$("#askInput").value=""});
+  document.addEventListener("submit",e=>{for(const h of HOOKS.submit) if(h(e)) return});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"){if($("#fmodal").classList.contains("open"))closeForm();else if($("#drawer").classList.contains("open"))closeDrawer();else if($("#cpanel")&&$("#cpanel").classList.contains("open"))closeChat();else if($("#intro").style.display!=="none")hideIntro();else if($("#menuPanel").classList.contains("open"))setMenu(false);else if($("#view"))$("#view").classList.remove("live")}});
+  $("#btnPrint").onclick=printQuote;
+  if($("#btnPoster")) $("#btnPoster").onclick=printPoster;
+  addEventListener("beforeprint",()=>{if(!document.body.classList.contains("print-poster"))buildQuote()});
+  addEventListener("afterprint",()=>document.body.classList.remove("print-poster"));
+  $("#termsBtn").onclick=()=>{const o=$("#terms").classList.toggle("open");$("#termsBtn").setAttribute("aria-expanded",o);$("#termsBtn").textContent=o?"Hide the full terms":"Read the full terms"};
+  $("#replay").onclick=()=>{scrollTo({top:0,behavior:"auto"});showIntro()};
+  let raf=0; addEventListener("scroll",()=>{if(!raf)raf=requestAnimationFrame(()=>{raf=0;onScroll()})},{passive:true});
+  addEventListener("resize",()=>{fitFrame();onScroll()}); onScroll();
+}
+let drawerFocus=null;
+function openDrawer(){drawerFocus=document.activeElement;$("#drawer").classList.add("open");document.documentElement.style.overflow="hidden";setTimeout(()=>$("#drawer .x").focus(),50)}
+function closeDrawer(){$("#drawer").classList.remove("open");document.documentElement.style.overflow="";if(drawerFocus)drawerFocus.focus({preventScroll:true})}
+
+/* Module: generic request flow (booking, order, quote or inquiry). Data: SITE.flow.
+   Customer form -> reference slip -> row in the client's Google Sheet -> staff view with status and a ready Messenger reply.
+   Sample data only. Nothing is sent. */
+(function(){
+  const F=SITE.flow; if(!F) return;
+  let ROWS=(F.sampleRows||[]).map(r=>({...r}));
+  const ST={view:"form",done:null,d:{},qty:{}};
+  const fieldById=Object.fromEntries(F.fields.map(f=>[f.id,f]));
+  const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
+  const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  const nice=v=>{if(/^\d{4}-\d{2}-\d{2}$/.test(v||"")){const d=new Date(v+"T00:00:00");return `${MONTHS[d.getMonth()].slice(0,3)} ${d.getDate()}, ${d.getFullYear()}`}return v};
+  const catTotal=q=>(F.catalog||[]).reduce((a,c)=>a+(q[c.id]||0)*c.price,0);
+  const catText=q=>(F.catalog||[]).filter(c=>q[c.id]).map(c=>`${q[c.id]} × ${c.name}`).join(", ");
+  function fieldHTML(f){
+    const v=ST.d[f.id]||"", req=f.required!==false;
+    const lab=`<label for="fl-${f.id}">${f.label}${req?"":" <span class=\"opt-l\">(optional)</span>"}</label>`;
+    const err=`<div class="err">${f.error||"Please fill this in."}</div>`, help=f.help?`<div class="help">${f.help}</div>`:"";
+    if(f.type==="textarea") return `<div class="fld" data-fid="${f.id}">${lab}<textarea id="fl-${f.id}" rows="3" placeholder="${esc(f.placeholder||"")}">${esc(v)}</textarea>${help}${err}</div>`;
+    if(f.type==="select") return `<div class="fld" data-fid="${f.id}">${lab}<select id="fl-${f.id}"><option value="">${f.placeholder||"Choose one"}</option>${f.options.map(o=>`<option ${v===o?"selected":""}>${esc(o)}</option>`).join("")}</select>${help}${err}</div>`;
+    if(f.type==="slots"||f.type==="choice"){const opts=f.type==="slots"?(F.slots||[]):f.options;
+      return `<div class="fld" data-fid="${f.id}"><span id="lab-${f.id}">${f.label}</span><div class="types" role="radiogroup" aria-labelledby="lab-${f.id}">${opts.map(o=>`<label><input type="radio" name="fl-${f.id}" value="${esc(o)}" ${v===o?"checked":""}><span>${esc(o)}</span></label>`).join("")}</div>${help}${err}</div>`}
+    if(f.type==="catalog") return `<div class="fld" data-fid="${f.id}"><span id="lab-${f.id}">${f.label}</span><ul class="cat">${(F.catalog||[]).map(c=>`<li><div><b>${esc(c.name)}</b>${c.note?`<small>${esc(c.note)}</small>`:""}</div><span class="cp">${peso(c.price)}</span><div class="qty"><button type="button" class="mini" data-qty="${c.id}" data-d="-1" aria-label="One less ${esc(c.name)}">−</button><output id="q-${c.id}">${ST.qty[c.id]||0}</output><button type="button" class="mini" data-qty="${c.id}" data-d="1" aria-label="One more ${esc(c.name)}">+</button></div></li>`).join("")}</ul><p class="cat-total">Total <b id="catTotal">${peso(catTotal(ST.qty))}</b></p>${help}${err}</div>`;
+    const t=f.type==="date"?"date":f.type==="email"?"email":f.type==="tel"?"tel":"text";
+    const extra=f.type==="date"?` min="${iso(today())}"`:f.type==="tel"?` inputmode="numeric" placeholder="09XX XXX XXXX"`:` placeholder="${esc(f.placeholder||"")}"`;
+    return `<div class="fld" data-fid="${f.id}">${lab}<input id="fl-${f.id}" type="${t}"${extra} value="${esc(v)}">${help}${err}</div>`;
+  }
+  function renderForm(){
+    const b=$("#pv-form"); if(!b) return;
+    if(ST.done){const r=ST.done;
+      b.innerHTML=`<div class="done-slip"><img src="${CONFIG.logo}" alt="" width="64" height="64"><h4>${F.slip.title}</h4><div class="ref">${esc(r.ref)}</div><span class="ref-l">Reference number</span>
+      <dl>${F.slipFields.map(id=>`<dt>${fieldById[id]?fieldById[id].short||fieldById[id].label:id}</dt><dd>${esc(nice(r[id])||"")}</dd>`).join("")}${F.catalog?`<dt>Total</dt><dd>${peso(r._total)}</dd>`:""}</dl>
+      <p>${F.slip.text}</p>
+      <div class="done-acts"><button type="button" class="btn btn-navy" data-fl="sheet">See it in the Google Sheet</button><button type="button" class="btn btn-soft" data-fl-view="staff">See it as staff</button><button type="button" class="btn btn-soft" data-fl="again">Start over</button></div></div>`;
+      return}
+    b.innerHTML=`<form class="tile prf" id="flForm" autocomplete="off" novalidate>
+      <div class="prf-head"><div><h4>${F.formTitle}</h4><p>${F.formLead}</p></div><span class="chip">${esc(CONFIG.orgShort)}</span></div>
+      <div class="row2">${F.fields.map(fieldHTML).join("")}</div>
+      <div class="fld" data-fid="_ok"><label class="consent"><input type="checkbox" id="fl-ok"><span>${F.consent}</span></label><div class="err">Please tick the box to continue.</div></div>
+      <div class="prf-acts"><button class="btn btn-navy" type="submit">${F.submitLabel}</button></div></form>`;
+  }
+  function read(){
+    F.fields.forEach(f=>{
+      if(f.type==="slots"||f.type==="choice"){const c=$(`input[name="fl-${f.id}"]:checked`);ST.d[f.id]=c?c.value:""}
+      else if(f.type==="catalog") ST.d[f.id]=catText(ST.qty);
+      else ST.d[f.id]=($("#fl-"+f.id).value||"").trim();
+    });
+  }
+  function validate(){
+    let first=null;
+    const bad=(id,on)=>{const el=$(`#flForm [data-fid="${id}"]`);el.classList.toggle("bad",on);if(on&&!first)first=el;return on};
+    F.fields.forEach(f=>{
+      const v=ST.d[f.id], req=f.required!==false; let wrong=req&&!v;
+      if(!wrong&&v&&f.type==="tel") wrong=!/^09\d{9}$/.test(v.replace(/\D/g,""));
+      if(!wrong&&v&&f.type==="email") wrong=!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+      if(!wrong&&v&&f.type==="date") wrong=new Date(v+"T00:00:00")<today();
+      if(f.type==="catalog") wrong=req&&!catTotal(ST.qty);
+      bad(f.id,wrong);
+    });
+    bad("_ok",!$("#fl-ok").checked);
+    if(first){const i=first.querySelector("input,select,textarea,button");if(i)i.focus()}
+    return !first;
+  }
+  function submit(e){
+    e.preventDefault(); read(); if(!validate()) return;
+    const r={...ST.d,ts:"Just now",status:F.statuses[0],fresh:true,ref:F.refPrefix+(10000+Math.floor(Math.random()*89999))};
+    F.fields.filter(f=>f.type==="tel").forEach(f=>{r[f.id]=r[f.id].replace(/\D/g,"").replace(/^(\d{4})(\d{3})(\d{4})$/,"$1 $2 $3")});
+    if(F.catalog) r._total=catTotal(ST.qty);
+    ROWS.push(r); ST.done=r; renderForm(); toast(F.savedToast||"Saved (sample only)");
+    const f=$("#pv-form .btn-navy"); if(f) f.focus({preventScroll:true});
+  }
+  function sheet(){
+    fmPost=null;
+    const cols=F.sheetCols;
+    openModal(`${F.sheetTitle}<small>Google Sheet of ${esc(CONFIG.orgShort)}</small>`,
+      `<div class="gf"><div class="gs"><div class="gs-top"><i></i><div><b>${F.sheetTitle}</b><small>Owned by ${esc(CONFIG.orgEmail)}</small></div></div>
+      <div class="gs-scroll"><table class="gs-t"><thead><tr><th>Timestamp</th><th>Reference</th>${cols.map(c=>`<th>${fieldById[c]?fieldById[c].short||fieldById[c].label:c}</th>`).join("")}${F.catalog?"<th>Total</th>":""}</tr></thead><tbody>
+      ${ROWS.map(r=>`<tr class="${r.fresh?"new":""}"><td>${esc(r.ts)}</td><td>${esc(r.ref)}</td>${cols.map(c=>`<td>${esc(nice(r[c])||"")}</td>`).join("")}${F.catalog?`<td>${peso(r._total||0)}</td>`:""}</tr>`).join("")}</tbody></table></div>
+      <p class="gs-note">${F.sheetNote||"Each request adds a row here, and the office gets an email. Sample data only."}</p></div>
+      <div class="gf-acts"><button class="btn btn-navy" type="button" data-fm-close>Back</button></div></div>`);
+  }
+  const fill=(tpl,r)=>tpl.replace(/\{(\w+)\}/g,(m,k)=>k==="total"?peso(r._total||0):nice(r[k])||"");
+  function renderStaff(){
+    const b=$("#pv-staff"); if(!b) return;
+    const counts=F.statuses.map(s=>ROWS.filter(r=>r.status===s).length);
+    b.innerHTML=`<div class="kpis">${F.statuses.map((s,i)=>`<div class="kpi"><b>${counts[i]}</b><span>${esc(s)}</span></div>`).join("")}<div class="kpi"><b>${ROWS.length}</b><span>All requests</span></div></div>
+    <div class="tile roles"><h5>${F.staffTitle}</h5><div class="tbl-scroll"><table class="mini-t"><thead><tr>${F.staffCols.map(c=>`<th>${fieldById[c]?fieldById[c].short||fieldById[c].label:c}</th>`).join("")}<th class="n">Status</th></tr></thead><tbody>
+    ${[...ROWS].reverse().map((r,i)=>{const k=ROWS.length-1-i;return `<tr><td>${esc(nice(r[F.staffCols[0]])||"")}<br><small class="pro">${esc(r.ref)}</small></td>${F.staffCols.slice(1).map(c=>`<td>${esc(nice(r[c])||"")}</td>`).join("")}<td class="n"><button type="button" class="st ${r.status===F.statuses[0]?"new":""}" data-fl-st="${k}" aria-label="Status of ${esc(r.ref)}: ${esc(r.status)}. Tap to change.">${r.fresh&&r.status===F.statuses[0]?"Just now":esc(r.status)}</button><br><button type="button" class="mini gold" data-fl-msg="${k}">Copy reply</button></td></tr>`}).join("")}</tbody></table></div>
+    <p class="hint"><button type="button" class="mini gold" data-fl="sheet">Open the Google Sheet</button></p></div>
+    <p class="hint">${F.staffNote||"Tap a status to move it along. Copy reply makes a ready Messenger message for that customer."}</p>`;
+  }
+  function showFlow(v){
+    ST.view=v;
+    $$("[data-fl-view]").forEach(b=>{if(b.closest(".vseg"))b.setAttribute("aria-selected",b.dataset.flView===v)});
+    ["form","staff"].forEach(k=>{const p=$("#pv-"+k);if(p)p.hidden=k!==v});
+    const V=F.views[v]; $("#appSub").textContent=V.sub; $("#appUrl").textContent=V.url; $("#vdesc").textContent=V.desc;
+    (v==="form"?renderForm:renderStaff)();
+  }
+  async function copyMsg(r){
+    const text=fill(F.message,r); let ok=false;
+    try{if(navigator.clipboard&&window.isSecureContext&&!copyReply.forceFail){await navigator.clipboard.writeText(text);ok=true}}catch(e){}
+    if(ok){toast("Reply copied. Paste it in Messenger.");return}
+    openModal(`Reply for ${esc(r.ref)}<small>Press and hold the text to copy</small>`,`<div class="gf"><div class="gf-card"><p class="bubble sel" id="flMsg">${esc(text)}</p></div><div class="gf-acts"><button class="btn btn-navy" type="button" data-fm-close>Done</button></div></div>`);
+    const el=$("#flMsg"), rg=document.createRange(); rg.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(rg);
+  }
+  window.showFlow=showFlow; window.flowRows=()=>ROWS;
+  HOOKS.apply=()=>showFlow("form");
+  HOOKS.init.push(()=>{if($("#pv-form"))showFlow("form")});
+  HOOKS.submit.push(e=>{if(e.target.id==="flForm"){submit(e);return true}});
+  HOOKS.click.push(e=>{
+    const q=e.target.closest("[data-qty]");
+    if(q){const id=q.dataset.qty;ST.qty[id]=Math.max(0,Math.min(99,(ST.qty[id]||0)+(+q.dataset.d)));$("#q-"+id).textContent=ST.qty[id];$("#catTotal").textContent=peso(catTotal(ST.qty));return true}
+    const t=e.target.closest("[data-fl-view],[data-fl],[data-fl-st],[data-fl-msg]"); if(!t) return false; const d=t.dataset;
+    if(d.flView) showFlow(d.flView);
+    else if(d.fl==="sheet") sheet();
+    else if(d.fl==="again"){ST.done=null;ST.d={};ST.qty={};renderForm();const f=$("#flForm input,#flForm select");if(f)f.focus({preventScroll:true})}
+    else if(d.flSt){const r=ROWS[+d.flSt];r.status=F.statuses[(F.statuses.indexOf(r.status)+1)%F.statuses.length];r.fresh=false;renderStaff();toast(`${r.ref} is now ${r.status}`)}
+    else if(d.flMsg) copyMsg(ROWS[+d.flMsg]);
+    return true;
+  });
+})();
+
+init();
+</script>
+</body>
+</html>
